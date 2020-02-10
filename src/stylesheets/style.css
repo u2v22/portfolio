@@ -1,5 +1,5 @@
-@import 'components/navbar.css';
-@import 'components/layout.css';
+@import './components/navbar.css';
+@import './components/layout.css';
 
 body {
   color: blue;
