@@ -1,2 +1,6 @@
 @import 'components/navbar.css';
 @import 'components/layout.css';
+
+body {
+  color: blue;
+}
