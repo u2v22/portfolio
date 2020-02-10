@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.navbar li {
+  list-style: none;
+  text-decoration: none;
+}

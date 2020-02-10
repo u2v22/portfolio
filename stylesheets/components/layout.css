@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Heebo';
+  font-weight: 300;
+}
+
+.navbar-layout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.puzzle-pieces {
+  width: 100vw;
+  height: 100vh;
+}
