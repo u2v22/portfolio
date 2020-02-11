@@ -1,0 +1,45 @@
+.carousel:firstChild {
+  /*background: url('../../images/cnd-ice-main-iPhone.png') no-repeat center top/cover;*/
+  background-color: black;
+}
+
+.carousel:nthChild(2) {
+  background: url('../../images/cnd-ice-main-desktop-Macbook.png') no-repeat center top/cover;
+}
+
+.carousel:nthChild(3) {
+  background: url('../../images/cnd-ice-sunshine-iPhone.png') no-repeat center top/cover;
+}
+
+.carousel:nthChild(4) {
+  background: url('../../images/cnd-ice-update-desc-iPhone.png') no-repeat center top/cover;
+}
+
+.buttons button{
+  border: solid 2px white;
+  background-color: pink; /*transparent*/
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  font-size: 14px;
+}
+
+.buttons button:hover {
+  background-color: white;
+  color: black;
+}
+
+.buttons button#prev {
+  position: absolute;
+  bottom: calc((100vh - 55px)/2);
+  left: calc(55vw + 15px);
+  padding: 6px 10px 6px 8px;
+}
+
+.buttons button#next {
+  position: absolute;
+  bottom: calc((100vh - 55px)/2);
+  padding: 6px 8px 6px 10px;
+  right: 15px;
+}

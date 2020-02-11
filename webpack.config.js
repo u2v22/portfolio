@@ -1,5 +1,6 @@
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 
 module.exports = {
   mode: 'development',
@@ -22,16 +23,17 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      }//,
-      // {
-      //   test: /\.html$/,
-      //   use: ["html-loader"]
-      // },
-      // {
-      //   test: /\.(svg|png|jpg|jpeg|gif)$/,
-      //   use: ["file-loader"]
-      // }
+        use: [
+          "style-loader",
+          "css-loader"
+        ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ]
+      }
     ]
   },
   plugins: [

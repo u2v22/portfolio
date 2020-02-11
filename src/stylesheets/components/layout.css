@@ -4,13 +4,21 @@ body {
   font-weight: 300;
 }
 
-.content-wrapper {
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
   display: flex;
-  width: 100vw;
+}
+
+.content-wrapper {
+  width: 55vw;
 }
 
 .content {
-  padding: 0 30px;
+  margin: 0 auto;
   width: 40vw;
 }
 
@@ -24,6 +32,9 @@ canvas {
   justify-content: flex-end;
 }
 
-
+.wrapper-carousel {
+  height: calc(100vh-55px);
+  width: 45vw;
+}
 
 

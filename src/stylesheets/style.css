@@ -1,6 +1,7 @@
 @import './components/navbar.css';
 @import './components/layout.css';
 @import './components/fonts.css';
+@import './components/carousel.css';
 
 canvas {
   overflow-y: hidden;

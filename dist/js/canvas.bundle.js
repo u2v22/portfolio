@@ -86,6 +86,31 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/carousel.css":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/carousel.css ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../images/cnd-ice-main-desktop-Macbook.png */ "./src/images/cnd-ice-main-desktop-Macbook.png");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../../images/cnd-ice-sunshine-iPhone.png */ "./src/images/cnd-ice-sunshine-iPhone.png");
+var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ../../images/cnd-ice-update-desc-iPhone.png */ "./src/images/cnd-ice-update-desc-iPhone.png");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);
+// Module
+exports.push([module.i, ".carousel:firstChild {\n  /*background: url('../../images/cnd-ice-main-iPhone.png') no-repeat center top/cover;*/\n  background-color: black;\n}\n\n.carousel:nthChild(2) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center top/cover;\n}\n\n.carousel:nthChild(3) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center top/cover;\n}\n\n.carousel:nthChild(4) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center top/cover;\n}\n\n.buttons button{\n  border: solid 2px white;\n  background-color: pink; /*transparent*/\n  color: white;\n  cursor: pointer;\n  border-radius: 50%;\n  outline: none;\n  font-size: 14px;\n}\n\n.buttons button:hover {\n  background-color: white;\n  color: black;\n}\n\n.buttons button#prev {\n  position: absolute;\n  bottom: calc((100vh - 55px)/2);\n  left: calc(55vw + 15px);\n  padding: 6px 10px 6px 8px;\n}\n\n.buttons button#next {\n  position: absolute;\n  bottom: calc((100vh - 55px)/2);\n  padding: 6px 8px 6px 10px;\n  right: 15px;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/fonts.css":
 /*!************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/fonts.css ***!
@@ -97,7 +122,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "h1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\nh4 {\n  font-weight: 300;\n}\n\nh5 {\n  font-weight: 300;\n}\n\nh6 {\n  font-weight: 300;\n}\n\np {\n  font-size: 12px;\n  font-weight: 300;\n  text-align: justify;\n}\n", ""]);
+exports.push([module.i, "h1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\nh4 {\n  font-weight: 300;\n}\n\nh5 {\n  font-weight: 300;\n}\n\nh6 {\n  font-weight: 300;\n}\n\np {\n  font-size: 12px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -115,7 +140,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\n.content-wrapper {\n  display: flex;\n  width: 100vw;\n}\n\n.content {\n  padding: 0 30px;\n  width: 40vw;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 60vw;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n\n\n\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n.container {\n  display: flex;\n}\n\n.content-wrapper {\n  width: 55vw;\n}\n\n.content {\n  margin: 0 auto;\n  width: 40vw;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 60vw;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n.wrapper-carousel {\n  height: calc(100vh-55px);\n  width: 45vw;\n}\n\n\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -152,10 +177,12 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css
 var ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/navbar.css */ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/navbar.css");
 var ___CSS_LOADER_AT_RULE_IMPORT_1___ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/layout.css */ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/layout.css");
 var ___CSS_LOADER_AT_RULE_IMPORT_2___ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/fonts.css */ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/fonts.css");
+var ___CSS_LOADER_AT_RULE_IMPORT_3___ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/carousel.css */ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/carousel.css");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_1___);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_2___);
+exports.i(___CSS_LOADER_AT_RULE_IMPORT_3___);
 // Module
 exports.push([module.i, "canvas {\n  overflow-y: hidden;\n}\n", ""]);
 // Exports
@@ -266,6 +293,51 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -549,6 +621,45 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./src/images/cnd-ice-main-desktop-Macbook.png":
+/*!*****************************************************!*\
+  !*** ./src/images/cnd-ice-main-desktop-Macbook.png ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "14206973444bdb44967be234a824f5aa.png");
+
+/***/ }),
+
+/***/ "./src/images/cnd-ice-sunshine-iPhone.png":
+/*!************************************************!*\
+  !*** ./src/images/cnd-ice-sunshine-iPhone.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "1f88a67e5673f91d1223589bf8eea896.png");
+
+/***/ }),
+
+/***/ "./src/images/cnd-ice-update-desc-iPhone.png":
+/*!***************************************************!*\
+  !*** ./src/images/cnd-ice-update-desc-iPhone.png ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "172503d9b9e6ad79c9120a150e7ace08.png");
+
+/***/ }),
+
 /***/ "./src/js/canvas.js":
 /*!**************************!*\
   !*** ./src/js/canvas.js ***!
@@ -560,11 +671,13 @@ module.exports = function (list, options) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/js/utils.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_utils__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages */ "./src/js/pages.js");
-/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_pages__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../stylesheets/style.css */ "./src/stylesheets/style.css");
-/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/style.css */ "./src/stylesheets/style.css");
+/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__);
 
+
+__webpack_require__(/*! ./pages */ "./src/js/pages.js");
+
+__webpack_require__(/*! ./carousel */ "./src/js/carousel.js");
 
  // import resolveCollision from './util-elastic-collision'
 // import rotate from './util-elastic-collision'
@@ -772,6 +885,67 @@ function animate() {
 init();
 animate();
 
+document.getElementById('home').onClick = function () {
+  init();
+  animate();
+};
+
+/***/ }),
+
+/***/ "./src/js/carousel.js":
+/*!****************************!*\
+  !*** ./src/js/carousel.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+console.log('carousel');
+var carousel = document.querySelectorAll('.carousel');
+var prev = document.getElementById('prev');
+var next = document.getElementById('next');
+var auto = false;
+var intervalTime = 5000;
+var carouselInterval;
+
+var prevSlide = function prevSlide() {
+  var current = document.querySelector('.current');
+  current.classList.remove('current');
+
+  if (current.previousElementSibling) {
+    current.previousElementSibling.classList.add('current');
+  } else {
+    carousel[carousel.length - 1].classList.add('current');
+  }
+
+  setTimeout(function () {
+    return current.classList.remove('current');
+  });
+};
+
+var nextSlide = function nextSlide() {
+  var current = document.querySelector('.current');
+  current.classList.remove('current');
+
+  if (current.nextElementSibling) {
+    current.nextElementSibling.classList.add('current');
+  } else {
+    carousel[0].classList.add('current');
+  }
+
+  setTimeout(function () {
+    return current.classList.remove('current');
+  });
+};
+
+prev.addEventListener('click', function (event) {
+  prevSlide();
+  console.log('running previous button');
+});
+next.addEventListener('click', function (event) {
+  nextSlide();
+  console.log('running next button');
+});
+
 /***/ }),
 
 /***/ "./src/js/pages.js":
@@ -785,30 +959,47 @@ var projects = document.getElementById('projects');
 var home = document.getElementById('home');
 var contact = document.getElementById('contact');
 var courses = document.getElementById('courses');
-var wrapper = document.querySelector('.content-wrapper');
+var wrapper = document.querySelector('.content');
+var projectImages = document.querySelector('.project-images');
 home.addEventListener('click', function (event) {
   console.log('clicked');
   wrapper.innerHTML = "";
-  wrapper.insertAdjacentHTML("beforeend", "<div class='content'><h1>Veronica Wajda</h1><p>An Engineer turned programmer. <br><br>Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication, geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.<br><br>Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.</p></div><canvas> </canvas>");
+  wrapper.insertAdjacentHTML("beforeend", "<h1>Veronica Wajda</h1><p>An Engineer turned programmer. <br><br>Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication, geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.<br><br>Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.</p>");
+  wrapper.appendElement;
 });
 projects.addEventListener('click', function (event) {
   console.log('projects');
   wrapper.innerHTML = "";
-  wrapper.insertAdjacentHTML("beforeend", "<div class='content'> \
+  wrapper.insertAdjacentHTML("beforeend", " \
     <h3>Cnd-Rockies-Ice-Climbs</h3> \
     <p>Ever wanted to find ice conditions on a specific climb? Or filter out ice climbs that are formed? What about having a community where anyone can update a trip description as routes change (anchors, approaches)? Canadian Rockies Ice Climbs is a website dedicated to those adventurous individuals that want to keep track of, and share beta about ice climbs specific to the Canadian rocky mountains.</p> \
     <h3>Uproot</h3> \
     <p>As we were all preparing to leave Barcelona everyone wondered where they would end up. France, Monaco, USA? It's a problem most of us were faced with: do we go back home or make somewhere new our home? Uproot is a mobile first web application designed to help you decide just that. Unlike typical information first websites Uproot uses a fun interactive quiz to help you decide where to relocate. You can manage your results if you do multiple quizzes. If you're not convinced then you can use the city lookup function to compare stats about the cities where you might consider living. </p> \
     <h3> Airpet </h3> \
     <p>A fun little Airbnb inspired replicate. Shelters can list available pets so people can have furry companions on a short term basis. Great for listing your pets while you're on vacation too!</p> \
-    </div>");
-  wrapper.insertAdjacentHTML("beforeend", "<img src='../images/cnd-ice-main-iPhone.png' alt='Screenshot of project website'>");
+    ");
+  wrapper.insertAdjacentHTML("beforeend", "");
+});
+courses.addEventListener('click', function (event) {
+  console.log('courses');
+  wrapper.innerHTML = "";
+  wrapper.insertAdjacentHTML("beforeend", " \
+    <h1>Courses</h1> \
+    <h3>Full Stack Dev</h3> \
+    <ul> \
+    <li> <i class='far fa-check-square'></i> JavaScript: ES5 & Babel </li> \
+    <li> <i class='far fa-check-square'></i> Ruby on Rails </li> \
+    <li> <i class='far fa-check-square'></i> Programming Fundementals </li> \
+    </ul> \
+    <h3>React and Redux </h3> \
+    <h3>BASc Mechanical Engineering</h3>");
 });
 contact.addEventListener('click', function (event) {
   console.log('contact');
   wrapper.innerHTML = "";
-  wrapper.insertAdjacentHTML("beforeend", "<h3>Hello</h3>");
-  wrapper.insertAdjacentHTML("beforeend", "<p>EShoot me an email at veronica.wajda@gmail.com if you have any interesting projects or would like to discuss any work opportunities.</p>");
+  wrapper.insertAdjacentHTML("beforeend", " \
+    <h1>Hello</h1> \
+    <p>Shoot me an email at veronica.wajda@gmail.com if you have any interesting projects or would like to discuss any work opportunities.</p>");
 });
 
 /***/ }),

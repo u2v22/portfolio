@@ -1,5 +1,7 @@
 import utils from './utils';
-import swapContent from './pages';
+require('./pages');
+require('./carousel');
+
 import "../stylesheets/style.css";
 // import resolveCollision from './util-elastic-collision'
 // import rotate from './util-elastic-collision'
@@ -217,3 +219,8 @@ function animate() {
 
 init()
 animate()
+
+document.getElementById('home').onClick = () => {
+  init()
+  animate()
+}

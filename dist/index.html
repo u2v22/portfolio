@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,30 +22,49 @@
         <li id="courses">Courses</li>
         <li id="contact">Contact</li>
         <li>
-          <i class="fab fa-instagram"></i>
+          <a href="https://www.instagram.com/veronica_hw/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
         </li>
         <li>
-          <i class="fab fa-linkedin-in"></i>
+          <a href="https://www.linkedin.com/in/veronicahwajda/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </li>
         <li>
-          <i class="fab fa-github"></i>
+          <a href="https://github.com/u2v22" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
       </ul>
     </div>
-    <div class="content-wrapper">
-      <div class="content">
-      <h1>Veronica Wajda</h1>
-      <p>An Engineer turned programmer. <br><br>
-         Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.
-         There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working
-         in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication,
-         geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.
-          <br><br>
-         Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take
-         a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.
-      </p>
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="content">
+        <h1>Veronica Wajda</h1>
+        <p>An Engineer turned programmer. <br><br>
+           Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.
+           There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working
+           in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication,
+           geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.
+            <br><br>
+           Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take
+           a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.
+        </p>
+        <img src="../../images/cnd-ice-sunshine-iPhone.png" alt="" width="200px" height="200px">
+        </div>
       </div>
-      <canvas></canvas>
+      <div class="wrapper-carousel">
+        <!-- <canvas></canvas> -->
+         <div class="carousel current"></div>
+        <div class="carousel"></div>
+        <div class="carousel"></div>
+        <div class="carousel"></div>
+        <div class="buttons">
+          <button id="prev"><i class="fas fa-angle-left"></i></button>
+          <button id="next"><i class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
     </div>
   <script type="text/javascript" src="./js/canvas.bundle.js"></script></body>
 
