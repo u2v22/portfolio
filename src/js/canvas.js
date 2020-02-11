@@ -1,12 +1,18 @@
-import utils from './utils'
+import utils from './utils';
+import "../stylesheets/style.css";
 // import resolveCollision from './util-elastic-collision'
 // import rotate from './util-elastic-collision'
+
+const navBar = document.querySelector('.navbar-layout');
 
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
 canvas.width = innerWidth
-canvas.height = innerHeight
+canvas.height = innerHeight - navBar.clientHeight
+
+// const gravity = 1;
+// const friction = 0.3;
 
 const mouse = {
   x: innerWidth / 2,
@@ -27,7 +33,7 @@ addEventListener('mousemove', (event) => {
 
 addEventListener('resize', () => {
   canvas.width = innerWidth
-  canvas.height = innerHeight
+  canvas.height = canvas.clientHeight
 
   init()
 })
@@ -118,9 +124,10 @@ function resolveCollision(particle, otherParticle) {
 function Particle(x, y, radius, color) {
     this.x = x
     this.y = y
+    // this.dy = dy
     this.velocity = {
-      x: Math.random() - 0.5 * 5,
-      y: Math.random() - 0.5 * 5
+      x: Math.random() - 0.5 * 3,
+      y: Math.random() - 0.5 * 3
     }
     this.radius = radius
     this.color = color
@@ -131,15 +138,17 @@ function Particle(x, y, radius, color) {
 
       for(let i = 0; i < particles.length; i++) {
         if(this === particles[i]) continue;
-        if(distance(this.x, this.y, particles[i].x, particles[i].y) - this.radius * 2 < 0) {
-            resolveCollision(this, particles[i]);
+        if(distance(this.x, this.y, particles[i].x, particles[i].y) - this.radius - particles[i].radius < 0) {
+          console.log('has collided');
+          resolveCollision(this, particles[i]);
         }
       }
-      if(this.x - this.radius <= 0 || this.x + this.radius >= innerWidth) {
+      // Ensuring the balls don't excape from the sides
+      if((this.x - this.radius <= 0) || (this.x + this.radius >= innerWidth)) {
         this.velocity.x = -this.velocity.x;
       }
-      if(this.y - this.radius <= 0 || this.y + this.radius >= innerHeight) {
-        this.velocity.y = -this.velocity.y;
+      if((this.y - this.radius <= 0) || (this.y + this.radius) >= (innerHeight - navBar.clientHeight)) {
+        this.velocity.y = -this.velocity.y; //-this.dy;
       }
 
       this.x += this.velocity.x;
@@ -150,8 +159,8 @@ function Particle(x, y, radius, color) {
   this.draw = () => {
     c.beginPath()
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-    c.strokeStyle = this.color // was fillStyle
-    c.stroke() // was c.fill()
+    c.fillStyle = this.color // was fillStyle
+    c.fill() // was c.fill()
     c.closePath()
   };
 }
@@ -161,15 +170,16 @@ let particles
 function init() {
   particles = []
 
-  for (let i = 0; i < 101; i++) {
-    const radius = 12;
+  for (let i = 0; i < 10; i++) {
+    // const radius = 20;
+    const radius = randomIntFromRange(20,60);
     const color = randomColor(colors);
     let x = randomIntFromRange(radius, canvas.width - radius);
     let y = randomIntFromRange(radius, canvas.height - radius);
 
     if(i !== 0){
       for(let j = 0; j < particles.length; j++){
-        if(distance(x, y, particles[j].x, particles[j].y) - radius * 2 < 0) {
+        if(distance(x, y, particles[j].x, particles[j].y) - radius - particles[j].radius < 0) {
           x = randomIntFromRange(radius, canvas.width - radius);
           y = randomIntFromRange(radius, canvas.height - radius);
           j = - 1;
