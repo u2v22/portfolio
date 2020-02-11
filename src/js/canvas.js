@@ -1,4 +1,5 @@
 import utils from './utils';
+import swapContent from './pages';
 import "../stylesheets/style.css";
 // import resolveCollision from './util-elastic-collision'
 // import rotate from './util-elastic-collision'
@@ -8,11 +9,13 @@ const navBar = document.querySelector('.navbar-layout');
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
-canvas.width = innerWidth
-canvas.height = innerHeight - navBar.clientHeight
+canvas.width = canvas.clientWidth;
+canvas.height = innerHeight - navBar.clientHeight;
 
-// const gravity = 1;
-// const friction = 0.3;
+console.log(innerWidth);
+
+const gravity = 1;
+const friction = 0.6;
 
 const mouse = {
   x: innerWidth / 2,
@@ -32,8 +35,8 @@ addEventListener('mousemove', (event) => {
 })
 
 addEventListener('resize', () => {
-  canvas.width = innerWidth
-  canvas.height = canvas.clientHeight
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
 
   init()
 })
@@ -112,11 +115,11 @@ function resolveCollision(particle, otherParticle) {
         const vFinal2 = rotate(v2, -angle);
 
         // Swap particle velocities for realistic bounce effect
-        particle.velocity.x = vFinal1.x;
-        particle.velocity.y = vFinal1.y;
+        particle.velocity.x = vFinal1.x * friction;
+        particle.velocity.y = vFinal1.y * friction;
 
-        otherParticle.velocity.x = vFinal2.x;
-        otherParticle.velocity.y = vFinal2.y;
+        otherParticle.velocity.x = vFinal2.x * friction;
+        otherParticle.velocity.y = vFinal2.y * friction;
     }
 }
 
@@ -139,16 +142,17 @@ function Particle(x, y, radius, color) {
       for(let i = 0; i < particles.length; i++) {
         if(this === particles[i]) continue;
         if(distance(this.x, this.y, particles[i].x, particles[i].y) - this.radius - particles[i].radius < 0) {
-          console.log('has collided');
           resolveCollision(this, particles[i]);
         }
       }
       // Ensuring the balls don't excape from the sides
-      if((this.x - this.radius <= 0) || (this.x + this.radius >= innerWidth)) {
+      if((this.x - this.radius <= 0) || (this.x + this.radius >= canvas.width)) {
         this.velocity.x = -this.velocity.x;
       }
-      if((this.y - this.radius <= 0) || (this.y + this.radius) >= (innerHeight - navBar.clientHeight)) {
-        this.velocity.y = -this.velocity.y; //-this.dy;
+      if(this.y - this.radius <= 0) {
+        this.velocity.y = -(this.velocity.y - 5); //-this.dy;
+      } else if(this.y + this.radius >= innerHeight - navBar.clientHeight) {
+        this.velocity.y = -this.velocity.y * friction; //-this.dy;
       }
 
       this.x += this.velocity.x;
@@ -159,8 +163,11 @@ function Particle(x, y, radius, color) {
   this.draw = () => {
     c.beginPath()
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-    c.fillStyle = this.color // was fillStyle
-    c.fill() // was c.fill()
+    c.font = "20px Georgia";
+    c.fillStyle = this.color // was strokeStyle
+    // c.fillStyle = pattern(<img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png">, 0);
+    c.fill() // was c.stroke()
+    // <img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png">
     c.closePath()
   };
 }
@@ -170,9 +177,15 @@ let particles
 function init() {
   particles = []
 
-  for (let i = 0; i < 10; i++) {
-    // const radius = 20;
-    const radius = randomIntFromRange(20,60);
+  for (let i = 0; i < 12; i++) {
+    let radius;
+    if(innerWidth <= 578){
+      radius = randomIntFromRange(15, 40);
+    } else if (innerWidth <= 768 && innerWidth > 578) {
+      radius = randomIntFromRange(20, 50);
+    } else {
+      radius = randomIntFromRange(20,60);
+    }
     const color = randomColor(colors);
     let x = randomIntFromRange(radius, canvas.width - radius);
     let y = randomIntFromRange(radius, canvas.height - radius);
@@ -189,15 +202,13 @@ function init() {
 
     particles.push(new Particle(x, y, radius, color));
   }
-  console.log(particles);
+  // console.log(particles);
 }
 
 // Animation Loop
 function animate() {
   requestAnimationFrame(animate)
   c.clearRect(0, 0, canvas.width, canvas.height)
-
-  // c.fillText('HTML CANVAS BOILERPLATE', mouse.x, mouse.y)
 
   particles.forEach(particle => {
    particle.update(particles)

@@ -86,6 +86,24 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/fonts.css":
+/*!************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/fonts.css ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "h1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\nh4 {\n  font-weight: 300;\n}\n\nh5 {\n  font-weight: 300;\n}\n\nh6 {\n  font-weight: 300;\n}\n\np {\n  font-size: 12px;\n  font-weight: 300;\n  text-align: justify;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/layout.css":
 /*!*************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/layout.css ***!
@@ -97,7 +115,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n.puzzle-pieces {\n  width: 100vw;\n  height: 100vh;\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\n.content-wrapper {\n  display: flex;\n  width: 100vw;\n}\n\n.content {\n  padding: 0 30px;\n  width: 40vw;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 60vw;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n\n\n\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -115,7 +133,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".navbar {\n  display: flex;\n  width: 40%;\n  justify-content: space-around;\n}\n\n.navbar li {\n  list-style: none;\n  text-decoration: none;\n}\n", ""]);
+exports.push([module.i, ".navbar {\n  display: flex;\n  width: 40%;\n  justify-content: space-around;\n}\n\n.navbar li {\n  list-style: none;\n  text-decoration: none;\n}\n\n.navbar li:hover {\n  cursor: pointer;\n}\n\n\n@media(max-width: 668px) { /*587*/\n  .navbar {\n    width: 100%;\n    font-size: 14px;\n  }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -133,9 +151,11 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/navbar.css */ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/navbar.css");
 var ___CSS_LOADER_AT_RULE_IMPORT_1___ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/layout.css */ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/layout.css");
+var ___CSS_LOADER_AT_RULE_IMPORT_2___ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/fonts.css */ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/fonts.css");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_1___);
+exports.i(___CSS_LOADER_AT_RULE_IMPORT_2___);
 // Module
 exports.push([module.i, "canvas {\n  overflow-y: hidden;\n}\n", ""]);
 // Exports
@@ -540,8 +560,11 @@ module.exports = function (list, options) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/js/utils.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_utils__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/style.css */ "./src/stylesheets/style.css");
-/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages */ "./src/js/pages.js");
+/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_pages__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../stylesheets/style.css */ "./src/stylesheets/style.css");
+/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_2__);
+
 
  // import resolveCollision from './util-elastic-collision'
 // import rotate from './util-elastic-collision'
@@ -549,10 +572,11 @@ __webpack_require__.r(__webpack_exports__);
 var navBar = document.querySelector('.navbar-layout');
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
-canvas.width = innerWidth;
-canvas.height = innerHeight - navBar.clientHeight; // const gravity = 1;
-// const friction = 0.3;
-
+canvas.width = canvas.clientWidth;
+canvas.height = innerHeight - navBar.clientHeight;
+console.log(innerWidth);
+var gravity = 1;
+var friction = 0.6;
 var mouse = {
   x: innerWidth / 2,
   y: innerHeight / 2
@@ -564,7 +588,7 @@ addEventListener('mousemove', function (event) {
   mouse.y = event.clientY;
 });
 addEventListener('resize', function () {
-  canvas.width = innerWidth;
+  canvas.width = canvas.clientWidth;
   canvas.height = canvas.clientHeight;
   init();
 }); // Utility functions
@@ -638,10 +662,10 @@ function resolveCollision(particle, otherParticle) {
     var vFinal1 = rotate(v1, -angle);
     var vFinal2 = rotate(v2, -angle); // Swap particle velocities for realistic bounce effect
 
-    particle.velocity.x = vFinal1.x;
-    particle.velocity.y = vFinal1.y;
-    otherParticle.velocity.x = vFinal2.x;
-    otherParticle.velocity.y = vFinal2.y;
+    particle.velocity.x = vFinal1.x * friction;
+    particle.velocity.y = vFinal1.y * friction;
+    otherParticle.velocity.x = vFinal2.x * friction;
+    otherParticle.velocity.y = vFinal2.y * friction;
   }
 } // Objects
 
@@ -667,18 +691,19 @@ function Particle(x, y, radius, color) {
       if (_this === particles[i]) continue;
 
       if (distance(_this.x, _this.y, particles[i].x, particles[i].y) - _this.radius - particles[i].radius < 0) {
-        console.log('has collided');
         resolveCollision(_this, particles[i]);
       }
     } // Ensuring the balls don't excape from the sides
 
 
-    if (_this.x - _this.radius <= 0 || _this.x + _this.radius >= innerWidth) {
+    if (_this.x - _this.radius <= 0 || _this.x + _this.radius >= canvas.width) {
       _this.velocity.x = -_this.velocity.x;
     }
 
-    if (_this.y - _this.radius <= 0 || _this.y + _this.radius >= innerHeight - navBar.clientHeight) {
-      _this.velocity.y = -_this.velocity.y; //-this.dy;
+    if (_this.y - _this.radius <= 0) {
+      _this.velocity.y = -(_this.velocity.y - 5); //-this.dy;
+    } else if (_this.y + _this.radius >= innerHeight - navBar.clientHeight) {
+      _this.velocity.y = -_this.velocity.y * friction; //-this.dy;
     }
 
     _this.x += _this.velocity.x;
@@ -688,9 +713,12 @@ function Particle(x, y, radius, color) {
   this.draw = function () {
     c.beginPath();
     c.arc(_this.x, _this.y, _this.radius, 0, Math.PI * 2, false);
-    c.fillStyle = _this.color; // was fillStyle
+    c.font = "20px Georgia";
+    c.fillStyle = _this.color; // was strokeStyle
+    // c.fillStyle = pattern(<img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png">, 0);
 
-    c.fill(); // was c.fill()
+    c.fill(); // was c.stroke()
+    // <img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png">
 
     c.closePath();
   };
@@ -702,9 +730,17 @@ var particles;
 function init() {
   particles = [];
 
-  for (var i = 0; i < 10; i++) {
-    // const radius = 20;
-    var radius = randomIntFromRange(20, 60);
+  for (var i = 0; i < 12; i++) {
+    var radius = void 0;
+
+    if (innerWidth <= 578) {
+      radius = randomIntFromRange(15, 40);
+    } else if (innerWidth <= 768 && innerWidth > 578) {
+      radius = randomIntFromRange(20, 50);
+    } else {
+      radius = randomIntFromRange(20, 60);
+    }
+
     var color = randomColor(colors);
     var x = randomIntFromRange(radius, canvas.width - radius);
     var y = randomIntFromRange(radius, canvas.height - radius);
@@ -720,16 +756,14 @@ function init() {
     }
 
     particles.push(new Particle(x, y, radius, color));
-  }
+  } // console.log(particles);
 
-  console.log(particles);
 } // Animation Loop
 
 
 function animate() {
   requestAnimationFrame(animate);
-  c.clearRect(0, 0, canvas.width, canvas.height); // c.fillText('HTML CANVAS BOILERPLATE', mouse.x, mouse.y)
-
+  c.clearRect(0, 0, canvas.width, canvas.height);
   particles.forEach(function (particle) {
     particle.update(particles);
   });
@@ -737,6 +771,45 @@ function animate() {
 
 init();
 animate();
+
+/***/ }),
+
+/***/ "./src/js/pages.js":
+/*!*************************!*\
+  !*** ./src/js/pages.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var projects = document.getElementById('projects');
+var home = document.getElementById('home');
+var contact = document.getElementById('contact');
+var courses = document.getElementById('courses');
+var wrapper = document.querySelector('.content-wrapper');
+home.addEventListener('click', function (event) {
+  console.log('clicked');
+  wrapper.innerHTML = "";
+  wrapper.insertAdjacentHTML("beforeend", "<div class='content'><h1>Veronica Wajda</h1><p>An Engineer turned programmer. <br><br>Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication, geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.<br><br>Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.</p></div><canvas> </canvas>");
+});
+projects.addEventListener('click', function (event) {
+  console.log('projects');
+  wrapper.innerHTML = "";
+  wrapper.insertAdjacentHTML("beforeend", "<div class='content'> \
+    <h3>Cnd-Rockies-Ice-Climbs</h3> \
+    <p>Ever wanted to find ice conditions on a specific climb? Or filter out ice climbs that are formed? What about having a community where anyone can update a trip description as routes change (anchors, approaches)? Canadian Rockies Ice Climbs is a website dedicated to those adventurous individuals that want to keep track of, and share beta about ice climbs specific to the Canadian rocky mountains.</p> \
+    <h3>Uproot</h3> \
+    <p>As we were all preparing to leave Barcelona everyone wondered where they would end up. France, Monaco, USA? It's a problem most of us were faced with: do we go back home or make somewhere new our home? Uproot is a mobile first web application designed to help you decide just that. Unlike typical information first websites Uproot uses a fun interactive quiz to help you decide where to relocate. You can manage your results if you do multiple quizzes. If you're not convinced then you can use the city lookup function to compare stats about the cities where you might consider living. </p> \
+    <h3> Airpet </h3> \
+    <p>A fun little Airbnb inspired replicate. Shelters can list available pets so people can have furry companions on a short term basis. Great for listing your pets while you're on vacation too!</p> \
+    </div>");
+  wrapper.insertAdjacentHTML("beforeend", "<img src='../images/cnd-ice-main-iPhone.png' alt='Screenshot of project website'>");
+});
+contact.addEventListener('click', function (event) {
+  console.log('contact');
+  wrapper.innerHTML = "";
+  wrapper.insertAdjacentHTML("beforeend", "<h3>Hello</h3>");
+  wrapper.insertAdjacentHTML("beforeend", "<p>EShoot me an email at veronica.wajda@gmail.com if you have any interesting projects or would like to discuss any work opportunities.</p>");
+});
 
 /***/ }),
 

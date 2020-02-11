@@ -4,12 +4,26 @@ body {
   font-weight: 300;
 }
 
+.content-wrapper {
+  display: flex;
+  width: 100vw;
+}
+
+.content {
+  padding: 0 30px;
+  width: 40vw;
+}
+
+canvas {
+  justify-content: flex-end;
+  width: 60vw;
+}
+
 .navbar-layout {
   display: flex;
   justify-content: flex-end;
 }
 
-.puzzle-pieces {
-  width: 100vw;
-  height: 100vh;
-}
+
+
+

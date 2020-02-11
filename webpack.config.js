@@ -19,10 +19,19 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }, {
+      },
+      {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
-      }
+      }//,
+      // {
+      //   test: /\.html$/,
+      //   use: ["html-loader"]
+      // },
+      // {
+      //   test: /\.(svg|png|jpg|jpeg|gif)$/,
+      //   use: ["file-loader"]
+      // }
     ]
   },
   plugins: [

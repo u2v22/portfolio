@@ -8,3 +8,15 @@
   list-style: none;
   text-decoration: none;
 }
+
+.navbar li:hover {
+  cursor: pointer;
+}
+
+
+@media(max-width: 668px) { /*587*/
+  .navbar {
+    width: 100%;
+    font-size: 14px;
+  }
+}
