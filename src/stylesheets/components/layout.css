@@ -32,9 +32,4 @@ canvas {
   justify-content: flex-end;
 }
 
-.wrapper-carousel {
-  height: calc(100vh-55px);
-  width: 45vw;
-}
-
 
