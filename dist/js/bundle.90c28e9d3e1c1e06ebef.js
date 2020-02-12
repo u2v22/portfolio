@@ -81,10 +81,21 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/canvas.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/main.js");
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./index.html":
+/*!********************!*\
+  !*** ./index.html ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"description\" content=\"My current work\">\n    <title> VHW | Portfolio </title>\n    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.0.10/css/all.css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Heebo:100,300,400&display=swap\" rel=\"stylesheet\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"shortcut icon\" href=\"favicon.ico\"></head>\n\n  <body>\n    <div class=\"navbar-layout\">\n      <ul class=\"navbar\">\n        <li id=\"home\">Home</li>\n        <li id=\"projects\">Projects</li>\n        <li id=\"courses\">Courses</li>\n        <li id=\"contact\">Contact</li>\n        <li>\n          <a href=\"https://www.instagram.com/veronica_hw/\" target=\"_blank\">\n            <i class=\"fab fa-instagram\"></i>\n          </a>\n        </li>\n        <li>\n          <a href=\"https://www.linkedin.com/in/veronicahwajda/\" target=\"_blank\">\n            <i class=\"fab fa-linkedin-in\"></i>\n          </a>\n        </li>\n        <li>\n          <a href=\"https://github.com/u2v22\" target=\"_blank\">\n            <i class=\"fab fa-github\"></i>\n          </a>\n        </li>\n      </ul>\n    </div>\n    <div class=\"container\">\n      <div class=\"content-wrapper\">\n        <div class=\"content\">\n        <h1>Veronica Wajda</h1>\n        <p>An Engineer turned programmer. <br><br>\n           Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.\n           There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working\n           in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication,\n           geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.\n            <br><br>\n           Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take\n           a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.\n        </p>\n        <!-- <img src=\"images/cnd-ice-main-desktop-Macbook.png\" alt=\"u suck\" width=\"200px\"> -->\n        </div>\n      </div>\n      <div class=\"wrapper-carousel\">\n        <!-- <canvas></canvas> -->\n         <div class=\"carousel current\">\n         </div>\n        <div class=\"carousel\"></div>\n        <div class=\"carousel\"></div>\n        <div class=\"carousel\"></div>\n        <div class=\"buttons\">\n          <button id=\"prev\"><i class=\"fas fa-angle-left\"></i></button>\n          <button id=\"next\"><i class=\"fas fa-angle-right\"></i></button>\n        </div>\n      </div>\n    </div>\n  <script type=\"text/javascript\" src=\"./js/bundle.js\"></script></body>\n</html>\n";
+
+/***/ }),
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/carousel.css":
 /*!***************************************************************************************!*\
@@ -95,16 +106,9 @@
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../images/cnd-ice-main-desktop-Macbook.png */ "./src/images/cnd-ice-main-desktop-Macbook.png");
-var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../../images/cnd-ice-sunshine-iPhone.png */ "./src/images/cnd-ice-sunshine-iPhone.png");
-var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ../../images/cnd-ice-update-desc-iPhone.png */ "./src/images/cnd-ice-update-desc-iPhone.png");
 exports = ___CSS_LOADER_API_IMPORT___(false);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-exports.push([module.i, ".carousel:firstChild {\n  /*background: url('../../images/cnd-ice-main-iPhone.png') no-repeat center top/cover;*/\n  background-color: black;\n}\n\n.carousel:nthChild(2) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center top/cover;\n}\n\n.carousel:nthChild(3) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center top/cover;\n}\n\n.carousel:nthChild(4) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center top/cover;\n}\n\n.buttons button{\n  border: solid 2px white;\n  background-color: pink; /*transparent*/\n  color: white;\n  cursor: pointer;\n  border-radius: 50%;\n  outline: none;\n  font-size: 14px;\n}\n\n.buttons button:hover {\n  background-color: white;\n  color: black;\n}\n\n.buttons button#prev {\n  position: absolute;\n  bottom: calc((100vh - 55px)/2);\n  left: calc(55vw + 15px);\n  padding: 6px 10px 6px 8px;\n}\n\n.buttons button#next {\n  position: absolute;\n  bottom: calc((100vh - 55px)/2);\n  padding: 6px 8px 6px 10px;\n  right: 15px;\n}\n", ""]);
+exports.push([module.i, ".carousel:firstChild {\n  /*background: url('images/eda77c500968dee4ba373de647fa9789.png') no-repeat center top/cover;*/\n}\n\n.carousel:nthChild(2) {\n  /*background: url('172503d9b9e6ad79c9120a150e7ace08.png') no-repeat center top/cover;*/\n}\n\n.carousel:nthChild(3) {\n  /*background: url('../../14206973444bdb44967be234a824f5aa.png') no-repeat center top/cover;*/\n}\n\n.carousel:nthChild(4) {\n  /*background: url('1f88a67e5673f91d1223589bf8eea896.png') no-repeat center top/cover;*/\n}\n\nimg {\n  width: 100%;\n}\n\n.buttons button{\n  border: solid 2px white;\n  background-color: pink; /*transparent*/\n  color: white;\n  cursor: pointer;\n  border-radius: 50%;\n  outline: none;\n  font-size: 14px;\n}\n\n.buttons button:hover {\n  background-color: white;\n  color: black;\n}\n\n.buttons button#prev {\n  position: absolute;\n  bottom: calc((100vh - 55px)/2);\n  left: calc(55vw + 15px);\n  padding: 6px 10px 6px 8px;\n}\n\n.buttons button#next {\n  position: absolute;\n  bottom: calc((100vh - 55px)/2);\n  padding: 6px 8px 6px 10px;\n  right: 15px;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -293,51 +297,6 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    // eslint-disable-next-line no-param-reassign
-    options = {};
-  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
-
-
-  url = url && url.__esModule ? url.default : url;
-
-  if (typeof url !== 'string') {
-    return url;
-  } // If url is already wrapped in quotes, remove them
-
-
-  if (/^['"].*['"]$/.test(url)) {
-    // eslint-disable-next-line no-param-reassign
-    url = url.slice(1, -1);
-  }
-
-  if (options.hash) {
-    // eslint-disable-next-line no-param-reassign
-    url += options.hash;
-  } // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-
-
-  if (/["'() \t\n]/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
-  }
-
-  return url;
-};
 
 /***/ }),
 
@@ -621,45 +580,6 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./src/images/cnd-ice-main-desktop-Macbook.png":
-/*!*****************************************************!*\
-  !*** ./src/images/cnd-ice-main-desktop-Macbook.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "14206973444bdb44967be234a824f5aa.png");
-
-/***/ }),
-
-/***/ "./src/images/cnd-ice-sunshine-iPhone.png":
-/*!************************************************!*\
-  !*** ./src/images/cnd-ice-sunshine-iPhone.png ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "1f88a67e5673f91d1223589bf8eea896.png");
-
-/***/ }),
-
-/***/ "./src/images/cnd-ice-update-desc-iPhone.png":
-/*!***************************************************!*\
-  !*** ./src/images/cnd-ice-update-desc-iPhone.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "172503d9b9e6ad79c9120a150e7ace08.png");
-
-/***/ }),
-
 /***/ "./src/js/canvas.js":
 /*!**************************!*\
   !*** ./src/js/canvas.js ***!
@@ -671,16 +591,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/js/utils.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_utils__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/style.css */ "./src/stylesheets/style.css");
-/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-__webpack_require__(/*! ./pages */ "./src/js/pages.js");
-
-__webpack_require__(/*! ./carousel */ "./src/js/carousel.js");
-
- // import resolveCollision from './util-elastic-collision'
-// import rotate from './util-elastic-collision'
 
 var navBar = document.querySelector('.navbar-layout');
 var canvas = document.querySelector('canvas');
@@ -945,6 +855,38 @@ next.addEventListener('click', function (event) {
   nextSlide();
   console.log('running next button');
 });
+module.exports = {
+  nextSlide: nextSlide,
+  prevSlide: prevSlide
+};
+
+/***/ }),
+
+/***/ "./src/js/main.js":
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/js/utils.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_utils__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/style.css */ "./src/stylesheets/style.css");
+/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../index.html */ "./index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_2__);
+__webpack_require__(/*! ./pages */ "./src/js/pages.js");
+
+__webpack_require__(/*! ./carousel */ "./src/js/carousel.js");
+
+__webpack_require__(/*! ./canvas */ "./src/js/canvas.js");
+
+ // import {nextSlide, prevSlide} from './carousel';
+
+
+
 
 /***/ }),
 
@@ -1065,4 +1007,4 @@ module.exports = exported;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=canvas.bundle.js.map
+//# sourceMappingURL=bundle.90c28e9d3e1c1e06ebef.js.map

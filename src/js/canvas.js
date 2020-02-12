@@ -1,10 +1,4 @@
 import utils from './utils';
-require('./pages');
-require('./carousel');
-
-import "../stylesheets/style.css";
-// import resolveCollision from './util-elastic-collision'
-// import rotate from './util-elastic-collision'
 
 const navBar = document.querySelector('.navbar-layout');
 

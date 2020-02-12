@@ -1,18 +1,21 @@
 .carousel:firstChild {
-  /*background: url('../../images/cnd-ice-main-iPhone.png') no-repeat center top/cover;*/
-  background-color: black;
+  /*background: url('images/eda77c500968dee4ba373de647fa9789.png') no-repeat center top/cover;*/
 }
 
 .carousel:nthChild(2) {
-  background: url('../../images/cnd-ice-main-desktop-Macbook.png') no-repeat center top/cover;
+  /*background: url('172503d9b9e6ad79c9120a150e7ace08.png') no-repeat center top/cover;*/
 }
 
 .carousel:nthChild(3) {
-  background: url('../../images/cnd-ice-sunshine-iPhone.png') no-repeat center top/cover;
+  /*background: url('../../14206973444bdb44967be234a824f5aa.png') no-repeat center top/cover;*/
 }
 
 .carousel:nthChild(4) {
-  background: url('../../images/cnd-ice-update-desc-iPhone.png') no-repeat center top/cover;
+  /*background: url('1f88a67e5673f91d1223589bf8eea896.png') no-repeat center top/cover;*/
+}
+
+img {
+  width: 100%;
 }
 
 .buttons button{

@@ -40,3 +40,5 @@ next.addEventListener('click', (event) => {
   nextSlide();
   console.log('running next button');
 })
+
+module.exports = { nextSlide, prevSlide }

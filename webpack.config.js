@@ -1,13 +1,14 @@
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path')
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/canvas.js',
+  entry: './src/js/main.js',
   output: {
     path: __dirname + '/dist/',
-    filename: './js/canvas.bundle.js'
+    filename: './js/bundle.[contentHash].js'
   },
   module: {
     rules: [
@@ -29,25 +30,36 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.html$/,
         use: [
-          'file-loader',
+          "html-loader"
         ]
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: "[name].[ext]",
+            outputPath: 'images',
+          }
+        }
       }
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      favicon: 'favicon.ico',
+      template: 'index.html' // src/index
+    }),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['dist'] },
       files: ['./dist/*'],
       notify: false
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      favicon: 'favicon.ico',
-      template: 'src/index.html'
     })
   ],
   watch: true,
