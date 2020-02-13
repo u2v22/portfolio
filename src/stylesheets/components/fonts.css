@@ -44,6 +44,11 @@ li {
   text-decoration: none;
 }
 
+#highlight {
+  text-decoration: underline;
+  color: rgb(116,152,140);
+}
+
 @media(max-width: 668px) { /*587*/
   p {
     font-size: 12px;

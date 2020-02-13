@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
   height: 600px;/*calc(100vh - 55px);*/
-  width: calc(45vw);
+  width: 45vw;
   justify-content: space-between;
   vertical-align: middle;
 }
@@ -58,22 +58,23 @@
   background: url('../../images/airpet-u2v22.herokuapp.com1-Macbook.png') no-repeat center center/contain;
 }
 
-#prev {
+button {
+  position: relative;
+  height: 20px;
+  top: 300px; /*navbar & half image*/
   background-color: transparent;
-  border: none;
   cursor: pointer;
   outline: none;
+  border: none;
   font-size: 22px;
-  padding-left: 35px;
+}
+
+#prev {
+  left: 35px;
 }
 
 #next {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  font-size: 22px;
-  padding-right: 35px;
+  right: 35px;
 }
 
 @media(max-width: 668px) { /*587*/

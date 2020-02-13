@@ -2,14 +2,15 @@ const slides = document.querySelectorAll('.slide');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const auto = true;
-const intervalTime = 4000;
+const intervalTime = 2000;
 let slideInterval;
 
 const nextSlide = () => {
   const current = document.querySelector('.current');
+
   current.classList.remove('current');
 
-  if(current.nextElementSibling) {
+  if(current.nextElementSibling && current.nextElementSibling.nodeName != "BUTTON") {
     current.nextElementSibling.classList.add('current');
   } else {
     slides[0].classList.add('current');
@@ -21,10 +22,9 @@ const prevSlide = () => {
   const current = document.querySelector('.current');
   current.classList.remove('current');
 
-  if(current.previousElementSibling) {
+  if(current.previousElementSibling && current.previousElementSibling.nodeName != "BUTTON") {
     current.previousElementSibling.classList.add('current');
   } else {
-    console.log(slides.length);
     slides[slides.length - 1].classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
@@ -34,7 +34,7 @@ prev.addEventListener('click', event => {
   prevSlide();
   if(auto) {
     clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
+    slideInterval = setInterval(prevSlide, intervalTime);
   }
   console.log('running previous button');
 })

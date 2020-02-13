@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"description\" content=\"My current work\">\n    <title> VHW | Portfolio </title>\n    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.0.10/css/all.css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Heebo:100,300,400&display=swap\" rel=\"stylesheet\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"shortcut icon\" href=\"favicon.ico\"></head>\n\n  <body>\n    <div class=\"navbar-layout\">\n      <ul class=\"navbar\">\n        <li id=\"home\">Home</li>\n        <li id=\"projects\">Projects</li>\n        <li id=\"courses\">Education</li>\n        <li id=\"contact\">Contact</li>\n      </ul>\n    </div>\n    <div class=\"container\">\n      <div class=\"content-left\">\n        <div class=\"content\">\n        <h1>Veronica Wajda</h1>\n        <p>An Engineer turned programmer. <br><br>\n           Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.\n           There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working\n           in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication,\n           geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.\n            <br><br>\n           Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take\n           a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.\n        </p>\n        </div>\n      </div>\n      <div class=\"content-right\">\n      <canvas></canvas>\n        <div class=\"slider hide-flex-element\">\n          <button id=\"prev\"><i class=\"fas fa-angle-left\"></i></button>\n          <div class=\"slide current\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <button id=\"next\"><i class=\"fas fa-angle-right\"></i></button>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n\n\n\n\n\n\n\n\n\n\n\n";
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"description\" content=\"My current work\">\n    <title> VHW | Portfolio </title>\n    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.0.10/css/all.css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Heebo:100,300,400&display=swap\" rel=\"stylesheet\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"shortcut icon\" href=\"favicon.ico\"></head>\n\n  <body>\n    <div class=\"navbar-layout\">\n      <ul class=\"navbar\">\n        <li id=\"home\">Home</li>\n        <li id=\"projects\">Projects</li>\n        <li id=\"courses\">Education</li>\n        <li id=\"contact\">Contact</li>\n      </ul>\n    </div>\n    <div class=\"container\">\n      <div class=\"wrapper-left\">\n        <div class=\"content\">\n        <h1>Veronica Wajda</h1>\n        <p>An Engineer turned programmer. <br><br>\n           Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.\n           There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working\n           in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication,\n           geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.\n            <br><br>\n           Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take\n           a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.\n        </p>\n        </div>\n      </div>\n      <div class=\"wrapper-right\">\n      <canvas></canvas>\n        <div class=\"slider hide-flex-element\">\n          <div class=\"slide current\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <div class=\"slide\"></div>\n          <button id=\"prev\"><i class=\"fas fa-angle-left\"></i></button>\n          <button id=\"next\"><i class=\"fas fa-angle-right\"></i></button>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n\n\n\n\n\n\n\n\n\n\n\n";
 
 /***/ }),
 
@@ -125,7 +125,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_5___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_
 var ___CSS_LOADER_URL_REPLACEMENT_6___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_6___);
 var ___CSS_LOADER_URL_REPLACEMENT_7___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_7___);
 // Module
-exports.push([module.i, ".show-flex-element {\n  display: flex;\n}\n\n.hide-flex-element {\n  display: none;\n}\n\n.slider {\n  position: relative;\n  overflow: hidden;\n  height: 600px;/*calc(100vh - 55px);*/\n  width: calc(45vw);\n  justify-content: space-between;\n  vertical-align: middle;\n}\n\n.slide {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  opacity: 0;\n  transition: opacity 0.7s ease-in-out;\n}\n\n.slide.current {\n  opacity: 1;\n}\n\n.slide:first-child() {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(2) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center top/contain;\n}\n\n.slide:nth-child(3) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(4) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(5) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(6) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(7) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(8) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") no-repeat center center/contain;\n}\n\n#prev {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  font-size: 22px;\n  padding-left: 35px;\n}\n\n#next {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  font-size: 22px;\n  padding-right: 35px;\n}\n\n@media(max-width: 668px) { /*587*/\n  #next {\n    padding-right: 20px;\n  }\n  #prev {\n    padding-left: 20px;\n  }\n}\n\n@media(max-width: 768px) {\n  .slider {\n    width: 100%;\n  }\n}\n", ""]);
+exports.push([module.i, ".show-flex-element {\n  display: flex;\n}\n\n.hide-flex-element {\n  display: none;\n}\n\n.slider {\n  position: relative;\n  overflow: hidden;\n  height: 600px;/*calc(100vh - 55px);*/\n  width: 45vw;\n  justify-content: space-between;\n  vertical-align: middle;\n}\n\n.slide {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  opacity: 0;\n  transition: opacity 0.7s ease-in-out;\n}\n\n.slide.current {\n  opacity: 1;\n}\n\n.slide:first-child() {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(2) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center top/contain;\n}\n\n.slide:nth-child(3) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(4) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(5) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(6) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(7) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(8) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") no-repeat center center/contain;\n}\n\nbutton {\n  position: relative;\n  height: 20px;\n  top: 300px; /*navbar & half image*/\n  background-color: transparent;\n  cursor: pointer;\n  outline: none;\n  border: none;\n  font-size: 22px;\n}\n\n#prev {\n  left: 35px;\n}\n\n#next {\n  right: 35px;\n}\n\n@media(max-width: 668px) { /*587*/\n  #next {\n    padding-right: 20px;\n  }\n  #prev {\n    padding-left: 20px;\n  }\n}\n\n@media(max-width: 768px) {\n  .slider {\n    width: 100%;\n  }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -143,7 +143,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nh1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\np {\n  font-size: 14px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n\ni {\n  font-size: 14px;\n}\n\nul {\n  padding: 0 20px;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n@media(max-width: 668px) { /*587*/\n  p {\n    font-size: 12px;\n  }\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nh1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\np {\n  font-size: 14px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n\ni {\n  font-size: 14px;\n}\n\nul {\n  padding: 0 20px;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n#highlight {\n  text-decoration: underline;\n  color: rgb(116,152,140);\n}\n\n@media(max-width: 668px) { /*587*/\n  p {\n    font-size: 12px;\n  }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -179,7 +179,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".container {\n  width: 100vw;\n  display: flex;\n}\n\n.wrapper-left {\n  width: 45%;\n}\n\n.wrapper-right {\n  display: flex;\n}\n\n.content {\n  padding: 0 60px;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 45vw;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n@media(max-width: 768px) {\n  .container {\n    flex-direction: column;\n  }\n  canvas {\n    width: 100vw;\n  }\n}\n\n@media(max-width: 480px) {\n  .content {\n    padding: 0 20px;\n  }\n}\n", ""]);
+exports.push([module.i, ".container {\n  width: 100vw;\n  display: flex;\n}\n\n.wrapper-left {\n  width: 55vw;\n}\n\n.wrapper-right {\n  display: flex;\n}\n\n.content {\n  padding: 0 60px;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 45vw;\n}\n\nimg {\n  display: block;\n  display: relative;\n  width: 300px;\n  margin: 0 auto;\n}\n\n#calgary {\n  position: absolute;\n  font-size: 12px;\n  left: 21.5%;\n  bottom: 35%;\n  color: rgb(235, 82, 71);\n  background-color: white;\n  padding: 3px 3px 2px 3px;\n  border-radius: 50%;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n@media(max-width: 768px) {\n  .container {\n    flex-direction: column;\n  }\n  canvas {\n    width: 100vw;\n  }\n}\n\n@media(max-width: 480px) {\n  .content {\n    padding: 0 20px;\n  }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -779,7 +779,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_utils__WEBPACK_IMPORTED_MODULE_0__);
 
 var navBar = document.querySelector('.navbar-layout');
-var leftSide = document.querySelector('.content-left');
+var leftSide = document.querySelector('.wrapper-left');
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
 canvas.width = canvas.clientWidth;
@@ -1014,14 +1014,14 @@ var slides = document.querySelectorAll('.slide');
 var prev = document.getElementById('prev');
 var next = document.getElementById('next');
 var auto = true;
-var intervalTime = 4000;
+var intervalTime = 2000;
 var slideInterval;
 
 var nextSlide = function nextSlide() {
   var current = document.querySelector('.current');
   current.classList.remove('current');
 
-  if (current.nextElementSibling) {
+  if (current.nextElementSibling && current.nextElementSibling.nodeName != "BUTTON") {
     current.nextElementSibling.classList.add('current');
   } else {
     slides[0].classList.add('current');
@@ -1036,10 +1036,9 @@ var prevSlide = function prevSlide() {
   var current = document.querySelector('.current');
   current.classList.remove('current');
 
-  if (current.previousElementSibling) {
+  if (current.previousElementSibling && current.previousElementSibling.nodeName != "BUTTON") {
     current.previousElementSibling.classList.add('current');
   } else {
-    console.log(slides.length);
     slides[slides.length - 1].classList.add('current');
   }
 
@@ -1053,7 +1052,7 @@ prev.addEventListener('click', function (event) {
 
   if (auto) {
     clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
+    slideInterval = setInterval(prevSlide, intervalTime);
   }
 
   console.log('running previous button');
@@ -1087,14 +1086,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addFooter", function() { return addFooter; });
 var addFooter = function addFooter() {
   var footer = document.querySelector('footer');
-  var container = document.querySelector('.container');
-
-  if (footer) {} else {
-    container.insertAdjacentHTML("beforeend", " \
-    <footer><div><a href='https://www.instagram.com/veronica_hw/' target='_blank'><i class='fab fa-instagram'></i></a><a href='https://www.linkedin.com/in/veronicahwajda/' target='_blank'><i class='fab fa-linkedin-in'></i></a><a href='https://github.com/u2v22' target='_blank'><i class='fab fa-github'></i></a></div></footer>");
-  }
-
-  ;
+  var container = document.querySelector('.container'); // if(footer){
+  // } else {
+  //   container.insertAdjacentHTML("beforeend", " \
+  //   <footer><div><a href='https://www.instagram.com/veronica_hw/' target='_blank'><i class='fab fa-instagram'></i></a><a href='https://www.linkedin.com/in/veronicahwajda/' target='_blank'><i class='fab fa-linkedin-in'></i></a><a href='https://github.com/u2v22' target='_blank'><i class='fab fa-github'></i></a></div></footer>");
+  // };
 };
 
 /***/ }),
@@ -1197,14 +1193,17 @@ contact.addEventListener('click', function (event) {
   wrapper.innerHTML = "";
   wrapper.insertAdjacentHTML("beforeend", " \
     <h1>Hello</h1> \
-    <p>Shoot me an email at <a href='mailto:veronica.wajda@gmail.com'>veronica.wajda@gmail.com</a> if you have any interesting projects or would like to discuss any work opportunities.</p> \
+    <p>Shoot me an email at <a id='highlight' href='mailto:veronica.wajda@gmail.com'>veronica.wajda@gmail.com</a> if you have any interesting projects or would like to discuss any work opportunities.</p> \
+    <img src='https://simplemaps.com/static/svg/ca/ca.svg'> \
+    <i id='calgary' class='fas fa-heart'></i> \
     <p> \
-    Find my work on \
-    <a href='https://github.com/u2v22' target='_blank'><i class='fab fa-github'></i> Github</a> \
-    Find out what I'm all about on my Instagram \
-    <a href='https://www.instagram.com/veronica_hw/' target='_blank'><i class='fab fa-instagram'></i> Instagram</a> \
-    or Check out this and more of my experience on \
-    <a href='https://www.linkedin.com/in/veronicahwajda/' target='_blank'><i class='fab fa-linkedin-in'></i> LinkedIn</a>.</p> \
+    Located in Calgary, Ab, Canada. <br><br> \
+    Find my work on: \
+    <a id='highlight' href='https://github.com/u2v22' target='_blank'><i class='fab fa-github'></i> Github</a>. <br><br>\
+    Discover out what I'm all about on my: \
+    <a id='highlight' href='https://www.instagram.com/veronica_hw/' target='_blank'><i class='fab fa-instagram'></i> Instagram</a><br> \
+    ...or check out this and more of my experience on \
+    <a id='highlight' href='https://www.linkedin.com/in/veronicahwajda/' target='_blank'><i class='fab fa-linkedin'></i> LinkedIn</a>.</p> \
     ");
 });
 
@@ -1271,4 +1270,4 @@ module.exports = exported;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.b17b11a77c1c53f8ac6f.js.map
+//# sourceMappingURL=bundle.5bb001cfc409d369254c.js.map

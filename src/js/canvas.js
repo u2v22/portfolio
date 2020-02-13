@@ -1,7 +1,7 @@
 import utils from './utils';
 
 const navBar = document.querySelector('.navbar-layout');
-const leftSide = document.querySelector('.content-left');
+const leftSide = document.querySelector('.wrapper-left');
 
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
