@@ -3,6 +3,7 @@
 @import './components/fonts.css';
 @import './components/carousel.css';
 @import './components/footer.css';
+@import './components/certificate.css';
 
 canvas {
   overflow-y: hidden;

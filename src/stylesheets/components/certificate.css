@@ -1,0 +1,11 @@
+#certificate {
+  background: url('../../images/fullstack-certificate-Veronica.png'), url('../../images/mech-eng.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, 100% auto;
+  background-position: center 10%, center 90%;
+  width: calc(45vw - 20px * 2);
+  /*height: calc(100vh - 55px);*/
+  margin-right: 40px;
+  position: sticky;
+  sticky: top;
+}
