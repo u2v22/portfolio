@@ -1,10 +1,11 @@
 .slider {
-  /*display: flex;*/
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 55px);
-  width: 100%;
-  object-fit: contain;
+  height: 600px;/*calc(100vh - 55px);*/
+  width: calc(45vw);
+  justify-content: space-between;
+  vertical-align: middle;
+  display: flex;
 }
 
 .slide {
@@ -22,7 +23,7 @@
 }
 
 .slide:first-child {
-  background: url('../../images/cnd-ice-main-desktop-Macbook.png') no-repeat center top/contain;
+  background: url('../../images/cnd-ice-main-desktop-Macbook.png') no-repeat center center/contain;
 }
 
 .slide:nth-child(2) {
@@ -37,28 +38,20 @@
   background: url('../../images/cnd-ice-update-desc-iPhone.png') no-repeat center top/contain;
 }
 
-.buttons button{
-  background-color: transparent; /*transparent*/
+#prev {
+  background-color: transparent;
   border: none;
-  color: black;
   cursor: pointer;
   outline: none;
   font-size: 22px;
+  padding-left: 35px;
 }
 
-.buttons button:hover {
-}
-
-.buttons button#prev {
-  position: absolute;
-  bottom: calc((100vh - 55px)/2);
-  left: calc(55vw + 15px);
-  padding: 6px 10px 6px 8px;
-}
-
-.buttons button#next {
-  position: absolute;
-  bottom: calc((100vh - 55px)/2);
-  padding: 6px 8px 6px 10px;
-  right: 15px;
+#next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 22px;
+  padding-right: 35px;
 }

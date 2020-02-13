@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"description\" content=\"My current work\">\n    <title> VHW | Portfolio </title>\n    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.0.10/css/all.css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Heebo:100,300,400&display=swap\" rel=\"stylesheet\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"shortcut icon\" href=\"favicon.ico\"></head>\n\n  <body>\n    <div class=\"navbar-layout\">\n      <ul class=\"navbar\">\n        <li id=\"home\">Home</li>\n        <li id=\"projects\">Projects</li>\n        <li id=\"courses\">Courses</li>\n        <li id=\"contact\">Contact</li>\n        <li>\n          <a href=\"https://www.instagram.com/veronica_hw/\" target=\"_blank\">\n            <i class=\"fab fa-instagram\"></i>\n          </a>\n        </li>\n        <li>\n          <a href=\"https://www.linkedin.com/in/veronicahwajda/\" target=\"_blank\">\n            <i class=\"fab fa-linkedin-in\"></i>\n          </a>\n        </li>\n        <li>\n          <a href=\"https://github.com/u2v22\" target=\"_blank\">\n            <i class=\"fab fa-github\"></i>\n          </a>\n        </li>\n      </ul>\n    </div>\n    <div class=\"container\">\n      <div class=\"content-wrapper\">\n        <div class=\"content\">\n        <h1>Veronica Wajda</h1>\n        <p>An Engineer turned programmer. <br><br>\n           Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.\n           There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working\n           in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication,\n           geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.\n            <br><br>\n           Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take\n           a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.\n        </p>\n        <!-- <img src=\"images/cnd-ice-main-desktop-Macbook.png\" alt=\"u suck\" width=\"200px\"> -->\n        </div>\n      </div>\n      <div class=\"wrapper-carousel\">\n        <!-- <canvas></canvas> -->\n         <div class=\"carousel current\">\n         </div>\n        <div class=\"carousel\"></div>\n        <div class=\"carousel\"></div>\n        <div class=\"carousel\"></div>\n        <div class=\"buttons\">\n          <button id=\"prev\"><i class=\"fas fa-angle-left\"></i></button>\n          <button id=\"next\"><i class=\"fas fa-angle-right\"></i></button>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n";
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"description\" content=\"My current work\">\n    <title> VHW | Portfolio </title>\n    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.0.10/css/all.css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Heebo:100,300,400&display=swap\" rel=\"stylesheet\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"shortcut icon\" href=\"favicon.ico\"></head>\n\n  <body>\n    <div class=\"navbar-layout\">\n      <ul class=\"navbar\">\n        <li id=\"home\">Home</li>\n        <li id=\"projects\">Projects</li>\n        <li id=\"courses\">Courses</li>\n        <li id=\"contact\">Contact</li>\n        <li>\n          <a href=\"https://www.instagram.com/veronica_hw/\" target=\"_blank\">\n            <i class=\"fab fa-instagram\"></i>\n          </a>\n        </li>\n        <li>\n          <a href=\"https://www.linkedin.com/in/veronicahwajda/\" target=\"_blank\">\n            <i class=\"fab fa-linkedin-in\"></i>\n          </a>\n        </li>\n        <li>\n          <a href=\"https://github.com/u2v22\" target=\"_blank\">\n            <i class=\"fab fa-github\"></i>\n          </a>\n        </li>\n      </ul>\n    </div>\n    <div class=\"container\">\n      <div class=\"content-left\">\n        <div class=\"content\">\n        <h1>Veronica Wajda</h1>\n        <p>An Engineer turned programmer. <br><br>\n           Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.\n           There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working\n           in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication,\n           geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.\n            <br><br>\n           Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take\n           a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.\n        </p>\n        </div>\n      </div>\n      <div class=\"content-right\">\n        <!-- <canvas></canvas> -->\n        <div class=\"slider\">\n          <button id=\"prev\"><i class=\"fas fa-angle-left\"></i></button>\n          <div class=\"slide current\">\n          </div>\n          <div class=\"slide\">\n          </div>\n          <div class=\"slide\">\n          </div>\n          <div class=\"slide\">\n          </div>\n          <button id=\"next\"><i class=\"fas fa-angle-right\"></i></button>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n\n\n\n\n\n\n\n\n\n\n\n";
 
 /***/ }),
 
@@ -107,17 +107,17 @@ module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta chars
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module './images/cnd-ice-main-desktop-Macbook.png'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module './images/cnd-ice-main-iPhone.png'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module './images/cnd-ice-sunshine-iPhone.png'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-var ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module './images/cnd-ice-update-desc-iPhone.png'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../images/cnd-ice-main-desktop-Macbook.png */ "./src/images/cnd-ice-main-desktop-Macbook.png");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../../images/cnd-ice-main-iPhone.png */ "./src/images/cnd-ice-main-iPhone.png");
+var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ../../images/cnd-ice-sunshine-iPhone.png */ "./src/images/cnd-ice-sunshine-iPhone.png");
+var ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(/*! ../../images/cnd-ice-update-desc-iPhone.png */ "./src/images/cnd-ice-update-desc-iPhone.png");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-exports.push([module.i, ".wrapper-carousel:firstChild {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center top/cover;\n}\n\n.wrapper-carousel:nthChild(2) {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center top/cover;\n}\n\n.wrapper-carousel:nthChild(3) {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center top/cover;\n}\n\n.wrapper-carousel:nthChild(4) {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat center top/cover;\n}\n\nimg {\n  width: 100%;\n}\n\n.buttons button{\n  border: solid 2px white;\n  background-color: pink; /*transparent*/\n  color: white;\n  cursor: pointer;\n  border-radius: 50%;\n  outline: none;\n  font-size: 14px;\n}\n\n.buttons button:hover {\n  background-color: white;\n  color: black;\n}\n\n.buttons button#prev {\n  position: absolute;\n  bottom: calc((100vh - 55px)/2);\n  left: calc(55vw + 15px);\n  padding: 6px 10px 6px 8px;\n}\n\n.buttons button#next {\n  position: absolute;\n  bottom: calc((100vh - 55px)/2);\n  padding: 6px 8px 6px 10px;\n  right: 15px;\n}\n", ""]);
+exports.push([module.i, ".slider {\n  position: relative;\n  overflow: hidden;\n  height: 600px;/*calc(100vh - 55px);*/\n  width: calc(45vw);\n  justify-content: space-between;\n  vertical-align: middle;\n  display: flex;\n}\n\n.slide {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  opacity: 0;\n  transition: opacity 0.7s ease-in-out;\n}\n\n.slide.current {\n  opacity: 1;\n}\n\n.slide:first-child {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(2) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center top/contain;\n}\n\n.slide:nth-child(3) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center top/contain;\n}\n\n.slide:nth-child(4) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat center top/contain;\n}\n\n#prev {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  font-size: 22px;\n  padding-left: 35px;\n}\n\n#next {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  font-size: 22px;\n  padding-right: 35px;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -153,7 +153,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n.container {\n  display: flex;\n}\n\n.content-wrapper {\n  width: 55vw;\n}\n\n.content {\n  margin: 0 auto;\n  width: 40vw;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 60vw;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n.wrapper-carousel {\n  height: calc(100vh-55px);\n  width: 45vw;\n}\n\n.carousel {\n  height: calc(100vh-55px);\n}\n\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n.container {\n  width: 100vw;\n  display: flex;\n}\n\n.wrapper-left {\n  width: 45%;\n}\n\n.wrapper-right {\n  display: flex;\n  /*flex-grow: 1;*/\n}\n\n.content {\n  padding: 0 60px;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 45vw;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -171,7 +171,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".navbar {\n  display: flex;\n  width: 40%;\n  justify-content: space-around;\n}\n\n.navbar li {\n  list-style: none;\n  text-decoration: none;\n}\n\n.navbar li:hover {\n  cursor: pointer;\n}\n\n\n@media(max-width: 668px) { /*587*/\n  .navbar {\n    width: 100%;\n    font-size: 14px;\n  }\n}\n", ""]);
+exports.push([module.i, ".navbar {\n  display: flex;\n  width: 60%;\n  justify-content: space-around;\n}\n\n.navbar li {\n  list-style: none;\n  text-decoration: none;\n}\n\n.navbar li:hover {\n  cursor: pointer;\n}\n\n\n@media(max-width: 668px) { /*587*/\n  .navbar {\n    width: 100%;\n    font-size: 14px;\n  }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -634,6 +634,58 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./src/images/cnd-ice-main-desktop-Macbook.png":
+/*!*****************************************************!*\
+  !*** ./src/images/cnd-ice-main-desktop-Macbook.png ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "images/cnd-ice-main-desktop-Macbook.png");
+
+/***/ }),
+
+/***/ "./src/images/cnd-ice-main-iPhone.png":
+/*!********************************************!*\
+  !*** ./src/images/cnd-ice-main-iPhone.png ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "images/cnd-ice-main-iPhone.png");
+
+/***/ }),
+
+/***/ "./src/images/cnd-ice-sunshine-iPhone.png":
+/*!************************************************!*\
+  !*** ./src/images/cnd-ice-sunshine-iPhone.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "images/cnd-ice-sunshine-iPhone.png");
+
+/***/ }),
+
+/***/ "./src/images/cnd-ice-update-desc-iPhone.png":
+/*!***************************************************!*\
+  !*** ./src/images/cnd-ice-update-desc-iPhone.png ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "images/cnd-ice-update-desc-iPhone.png");
+
+/***/ }),
+
 /***/ "./src/js/canvas.js":
 /*!**************************!*\
   !*** ./src/js/canvas.js ***!
@@ -863,28 +915,12 @@ document.getElementById('home').onClick = function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-console.log('carousel');
-var carousel = document.querySelectorAll('.carousel');
+var slides = document.querySelectorAll('.slide');
 var prev = document.getElementById('prev');
 var next = document.getElementById('next');
-var auto = false;
+var auto = true;
 var intervalTime = 5000;
-var carouselInterval;
-
-var prevSlide = function prevSlide() {
-  var current = document.querySelector('.current');
-  current.classList.remove('current');
-
-  if (current.previousElementSibling) {
-    current.previousElementSibling.classList.add('current');
-  } else {
-    carousel[carousel.length - 1].classList.add('current');
-  }
-
-  setTimeout(function () {
-    return current.classList.remove('current');
-  });
-};
+var slideInterval;
 
 var nextSlide = function nextSlide() {
   var current = document.querySelector('.current');
@@ -893,7 +929,22 @@ var nextSlide = function nextSlide() {
   if (current.nextElementSibling) {
     current.nextElementSibling.classList.add('current');
   } else {
-    carousel[0].classList.add('current');
+    slides[0].classList.add('current');
+  }
+
+  setTimeout(function () {
+    return current.classList.remove('current');
+  });
+};
+
+var prevSlide = function prevSlide() {
+  var current = document.querySelector('.current');
+  current.classList.remove('current');
+
+  if (current.previousElementSibling) {
+    current.previousElementSibling.classList.add('current');
+  } else {
+    slides[slides.length - 1].classList.add('current');
   }
 
   setTimeout(function () {
@@ -903,16 +954,28 @@ var nextSlide = function nextSlide() {
 
 prev.addEventListener('click', function (event) {
   prevSlide();
+
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+
   console.log('running previous button');
 });
 next.addEventListener('click', function (event) {
   nextSlide();
+
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+
   console.log('running next button');
 });
-module.exports = {
-  nextSlide: nextSlide,
-  prevSlide: prevSlide
-};
+
+if (auto) {
+  slideInterval = setInterval(nextSlide, intervalTime);
+} // module.exports = { nextSlide, prevSlide }
 
 /***/ }),
 
@@ -1061,4 +1124,4 @@ module.exports = exported;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.a565e6160c9c05e5ba7d.js.map
+//# sourceMappingURL=bundle.2044a4fb064ff813fbd3.js.map

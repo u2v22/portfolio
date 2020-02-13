@@ -10,21 +10,26 @@ li {
 }
 
 .container {
+  width: 100vw;
   display: flex;
 }
 
-.content-wrapper {
-  width: 55vw;
+.wrapper-left {
+  width: 45%;
+}
+
+.wrapper-right {
+  display: flex;
+  /*flex-grow: 1;*/
 }
 
 .content {
-  margin: 0 auto;
-  width: 40vw;
+  padding: 0 60px;
 }
 
 canvas {
   justify-content: flex-end;
-  width: 60vw;
+  width: 45vw;
 }
 
 .navbar-layout {
