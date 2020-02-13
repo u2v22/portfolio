@@ -135,7 +135,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "h1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\nh4 {\n  font-weight: 300;\n}\n\nh5 {\n  font-weight: 300;\n}\n\nh6 {\n  font-weight: 300;\n}\n\np {\n  font-size: 12px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n", ""]);
+exports.push([module.i, "h1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\nh4 {\n  font-weight: 300;\n}\n\nh5 {\n  font-weight: 300;\n}\n\nh6 {\n  font-weight: 300;\n}\n\np {\n  font-size: 14px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n\nli {\n  font-size: 14px;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -165,16 +165,9 @@ module.exports = exports;
   !*** ./node_modules/css-loader/dist/cjs.js!./src/stylesheets/components/navbar.css ***!
   \*************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".navbar {\n  display: flex;\n  width: 60%;\n  justify-content: space-around;\n}\n\n.navbar li {\n  list-style: none;\n  text-decoration: none;\n}\n\n.navbar li:hover {\n  cursor: pointer;\n}\n\n\n@media(max-width: 668px) { /*587*/\n  .navbar {\n    width: 100%;\n    font-size: 14px;\n  }\n}\n", ""]);
-// Exports
-module.exports = exports;
-
+throw new Error("Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nCssSyntaxError\n\n(16:1) Unclosed block\n\n \u001b[90m 14 | \u001b[39m\u001b[33m}\u001b[39m\n \u001b[90m 15 | \u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 | \u001b[39m\u001b[36m@media\u001b[39m\u001b[36m(max-width: 1500px)\u001b[39m \u001b[33m{\u001b[39m \u001b[90m/*587*/\u001b[39m\n \u001b[90m    | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 | \u001b[39m  \u001b[33m.navbar\u001b[39m \u001b[33m{\u001b[39m\n \u001b[90m 18 | \u001b[39m    width\u001b[33m:\u001b[39m 55%\u001b[33m;\u001b[39m\n");
 
 /***/ }),
 
@@ -1124,4 +1117,4 @@ module.exports = exported;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.2044a4fb064ff813fbd3.js.map
+//# sourceMappingURL=bundle.144269a88687eb8376e0.js.map

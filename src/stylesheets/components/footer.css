@@ -1,0 +1,17 @@
+footer {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  /*transform: translateX(-50%);*/
+  margin-top: 10px;
+}
+
+footer > div {
+  text-align: center;
+}
+
+footer > div > a {
+  padding: 0 10px;
+  text-align: center;
+}

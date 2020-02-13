@@ -3,18 +3,19 @@ const home = document.getElementById('home');
 const contact = document.getElementById('contact');
 const courses = document.getElementById('courses');
 const wrapper = document.querySelector('.content');
-const projectImages = document.querySelector('.project-images')
-
+const projectImages = document.querySelector('.project-images');
 
 home.addEventListener('click', event => {
-  console.log('clicked');
+  document.querySelector('.slider').classList.add('hide-flex-element');
+  document.querySelector('.slider').classList.remove('show-flex-element');
   wrapper.innerHTML = "";
-  wrapper.insertAdjacentHTML("beforeend", "<h1>Veronica Wajda</h1><p>An Engineer turned programmer. <br><br>Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication, geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.<br><br>Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.</p>")
-  wrapper.appendElement
+  wrapper.insertAdjacentHTML("beforeend", "<h1>Veronica Wajda</h1><p>An Engineer turned programmer. <br><br>Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication, geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.<br><br>Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.</p>");
 });
 
 projects.addEventListener('click', event => {
-  console.log('projects');
+
+  document.querySelector('.slider').classList.remove('hide-flex-element');
+  document.querySelector('.slider').classList.add('show-flex-element');
 
   wrapper.innerHTML = "";
 
@@ -26,29 +27,43 @@ projects.addEventListener('click', event => {
     <h3> Airpet </h3> \
     <p>A fun little Airbnb inspired replicate. Shelters can list available pets so people can have furry companions on a short term basis. Great for listing your pets while you're on vacation too!</p> \
     ");
-  wrapper.insertAdjacentHTML("beforeend", "")
+  addFooter();
 });
 
 courses.addEventListener('click', event => {
-  console.log('courses');
+  document.querySelector('.slider').classList.add('hide-flex-element');
+  document.querySelector('.slider').classList.remove('show-flex-element');
+  const footer = document.querySelector('footer');
+
   wrapper.innerHTML = "";
   wrapper.insertAdjacentHTML("beforeend", " \
     <h1>Courses</h1> \
     <h3>Full Stack Dev</h3> \
-    <ul> \
-    <li> <i class='far fa-check-square'></i> JavaScript: ES5 & Babel </li> \
-    <li> <i class='far fa-check-square'></i> Ruby on Rails </li> \
-    <li> <i class='far fa-check-square'></i> Programming Fundementals </li> \
-    </ul> \
+    <p> \
+    Web 101: how the web works | Terminal basic commands | Git basic commands | HTML / CSS foundations | Javascript foundations | General knowledge about tech workflows in a startup | Core concepts of programming | Ruby doc for built-in classes | Algorithms & data structures (Array, Hash) | Text pattern detection with Regular Expressions | Parse and store data from standardized files (JSON, CSV, XML) | Web scraping with Nokogiri | Request and parse data from RESTful JSON APIs | Core concepts of Object-Oriented programming | Classes, objects and instance variables | Instance and class methods, Inheritance | Public vs. Private Interfaces | Routing users' requests | Simulating a database with CSV files | In-depth understanding of MVC (Model View Controller) | Database Schema Design & SQL | One-to-many, many-to-many relations and join table | CRUD in SQL (Create, Read, Update, Delete) | Advanced JOIN queries | Connecting your DB to ruby with an ORM (Object Relational Mapping) | Active Record Basics: migrations & naming convention | Active Record Advanced: associations & validation | Product Design, UX & UI principles | HTML basics | CSS (selectors, properties, stylesheets' organization) | Atomic design principles | CSS techniques with flexbox & CSS grid | CSS media queries for Adaptive Design | Bootstrap basics & Responsive Grid System | JavaScript fundamentals | ES6 and differences to ES5 | JavaScript Tooling (Babel, Webpack, yarn) | DOM Events & AJAX | MVC in Rails: Routing, Controllers, Params & Views | Models & CRUD in Rails | Adding gems to your project | ERB: Layouts, Partials and Helpers | Nested Resources and Namespaces | Refactoring an app with Services | Defining a Rails API | Collaborating on a Rails app with Git and Github | Testing in Rails with Rspec | Authentication with Devise | Omniauth and 3rd services' login | Users' authorization | Search in Rails | Payment, Mailing, Geocoding and Maps | Background Jobs with Sidekiq | Image upload with Cloudinary & Continuous Deployment with Heroku \
+    </p> \
     <h3>React and Redux </h3> \
-    <h3>BASc Mechanical Engineering</h3>");
+    <h3>BASc Mechanical Engineering</h3> \
+    <p> \
+    Engineering Design | Principles of Chemistry | Engineering Mechanics | Fundamentals of Engineering Computation | Calculus I | Technical Report Writing | Calculus II | Introduction to Linear Algebra | Introduction to Mechanical Engineering | Fundamentals of Physics II | Introduction to Product Development for Engineers and Computer Scientists | Calculus III for Engineers | Ordinary Differential Equations and Numerical Methods | Mechanics II | Thermodynamics I | Engineering Materials I | Mechanics of Materials | Electric Circuits and Machines for Mechanical Engineering | Probability and Statistics for Engineers | Introduction to Design | Thermodynamics II | Engineering Materials II | Electronics for Mechanical Engineers | Mathematics for Engineers | Advanced Strength of Materials | System Dynamics | Fluid Mechanics I | Engineering Law | Heat Transfer | Dynamics of Machinery | Machine Design | Control Systems | Fluid Mechanics II | Computer-Aided Design | Manufacturing | Technology, Society and Environment since 1800 | Mechanical Vibration Analysis | Mechanical Engineering Laboratory \
+    </p>");
 });
 
 
 contact.addEventListener('click', event => {
-  console.log('contact');
+  document.querySelector('.slider').classList.add('hide-flex-element');
+  document.querySelector('.slider').classList.remove('show-flex-element');
+
   wrapper.innerHTML = "";
   wrapper.insertAdjacentHTML("beforeend", " \
     <h1>Hello</h1> \
-    <p>Shoot me an email at veronica.wajda@gmail.com if you have any interesting projects or would like to discuss any work opportunities.</p>")
+    <p>Shoot me an email at veronica.wajda@gmail.com if you have any interesting projects or would like to discuss any work opportunities.</p> \
+    <p> \
+    Find my work on \
+    <a href='https://github.com/u2v22' target='_blank'><i class='fab fa-github'></i> Github</a> \
+    Find out what I'm all about on my Instagram \
+    <a href='https://www.instagram.com/veronica_hw/' target='_blank'><i class='fab fa-instagram'></i> Instagram</a> \
+    or Check out this and more of my experience on \
+    <a href='https://www.linkedin.com/in/veronicahwajda/' target='_blank'><i class='fab fa-linkedin-in'></i> LinkedIn</a>.</p> \
+    ");
 });

@@ -1,3 +1,11 @@
+.show-flex-element {
+  display: flex;
+}
+
+.hide-flex-element {
+  display: none;
+}
+
 .slider {
   position: relative;
   overflow: hidden;
@@ -5,7 +13,6 @@
   width: calc(45vw);
   justify-content: space-between;
   vertical-align: middle;
-  display: flex;
 }
 
 .slide {
@@ -22,19 +29,19 @@
   opacity: 1;
 }
 
-.slide:first-child {
+.slide:nth-child(2) {
   background: url('../../images/cnd-ice-main-desktop-Macbook.png') no-repeat center center/contain;
 }
 
-.slide:nth-child(2) {
+.slide:nth-child(3) {
   background: url('../../images/cnd-ice-main-iPhone.png') no-repeat center top/contain;
 }
 
-.slide:nth-child(3) {
+.slide:nth-child(4) {
   background: url('../../images/cnd-ice-sunshine-iPhone.png') no-repeat center top/contain;
 }
 
-.slide:nth-child(4) {
+.slide:nth-child(5) {
   background: url('../../images/cnd-ice-update-desc-iPhone.png') no-repeat center top/contain;
 }
 
@@ -54,4 +61,19 @@
   outline: none;
   font-size: 22px;
   padding-right: 35px;
+}
+
+@media(max-width: 668px) { /*587*/
+  #next {
+    padding-right: 20px;
+  }
+  #prev {
+    padding-left: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .slider {
+    width: 100%;
+  }
 }

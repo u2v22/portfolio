@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  font-family: 'Heebo';
+  font-weight: 300;
+}
+
 h1 {
   font-weight: 300;
 }
@@ -14,20 +20,8 @@ h3:hover {
   cursor: pointer;
 }
 
-h4 {
-  font-weight: 300;
-}
-
-h5 {
-  font-weight: 300;
-}
-
-h6 {
-  font-weight: 300;
-}
-
 p {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   text-align: justify;
 }
@@ -35,4 +29,27 @@ p {
 a {
   text-decoration: none;
   color: black;
+}
+
+i {
+  font-size: 14px;
+}
+
+ul {
+  padding: 0 20px;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar > li {
+  font-size: 14px;
+}
+
+@media(max-width: 668px) { /*587*/
+  p {
+    font-size: 12px;
+  }
 }

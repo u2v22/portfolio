@@ -2,7 +2,7 @@ const slides = document.querySelectorAll('.slide');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const auto = true;
-const intervalTime = 5000;
+const intervalTime = 4000;
 let slideInterval;
 
 const nextSlide = () => {
@@ -24,6 +24,7 @@ const prevSlide = () => {
   if(current.previousElementSibling) {
     current.previousElementSibling.classList.add('current');
   } else {
+    console.log(slides.lenght);
     slides[slides.length - 1].classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
@@ -50,5 +51,3 @@ next.addEventListener('click', event => {
 if(auto) {
   slideInterval = setInterval(nextSlide, intervalTime);
 }
-
-// module.exports = { nextSlide, prevSlide }
