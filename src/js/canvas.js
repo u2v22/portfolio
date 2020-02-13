@@ -1,14 +1,19 @@
 import utils from './utils';
 
 const navBar = document.querySelector('.navbar-layout');
+const leftSide = document.querySelector('.content-left');
 
-const canvas = document.querySelector('canvas')
-const c = canvas.getContext('2d')
+const canvas = document.querySelector('canvas');
+const c = canvas.getContext('2d');
 
 canvas.width = canvas.clientWidth;
-canvas.height = innerHeight - navBar.clientHeight;
+console.log(leftSide.clientHeight);
 
-console.log(innerWidth);
+if(innerWidth <=768){
+  canvas.height = innerHeight - navBar.clientHeight - leftSide.clientHeight;
+} else {
+  canvas.height = innerHeight - navBar.clientHeight;
+}
 
 const gravity = 1;
 const friction = 0.6;
@@ -20,8 +25,8 @@ const mouse = {
 
 const colors = [
   'rgb(235, 82, 71)',
-  'rgb(114, 201, 194',
-  'rgb(134, 167, 158',
+  'rgb(114, 201, 194)',
+  'rgb(134, 167, 158)',
   'rgb(183, 85, 74)']
 
 // Event Listeners
@@ -31,10 +36,16 @@ addEventListener('mousemove', (event) => {
 })
 
 addEventListener('resize', () => {
-  canvas.width = canvas.clientWidth;
-  canvas.height = canvas.clientHeight;
-
-  init()
+  if(canvas){
+    console.log('has canvas');
+    canvas.width = canvas.clientWidth;
+    if(innerWidth <=768){
+      canvas.height = innerHeight - navBar.clientHeight - leftSide.clientHeight;
+    } else {
+      canvas.height = innerHeight - navBar.clientHeight;
+    }
+    init();
+  }
 })
 
 // Utility functions
@@ -147,7 +158,7 @@ function Particle(x, y, radius, color) {
       }
       if(this.y - this.radius <= 0) {
         this.velocity.y = -(this.velocity.y - 5); //-this.dy;
-      } else if(this.y + this.radius >= innerHeight - navBar.clientHeight) {
+      } else if(this.y + this.radius >= canvas.height) {
         this.velocity.y = -this.velocity.y * friction; //-this.dy;
       }
 
@@ -198,7 +209,6 @@ function init() {
 
     particles.push(new Particle(x, y, radius, color));
   }
-  // console.log(particles);
 }
 
 // Animation Loop

@@ -29,6 +29,9 @@ canvas {
   .container {
     flex-direction: column;
   }
+  canvas {
+    width: 100vw;
+  }
 }
 
 @media(max-width: 480px) {

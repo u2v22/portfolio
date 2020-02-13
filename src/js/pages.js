@@ -4,10 +4,13 @@ const contact = document.getElementById('contact');
 const courses = document.getElementById('courses');
 const wrapper = document.querySelector('.content');
 const projectImages = document.querySelector('.project-images');
+import { addFooter } from './footer';
 
 home.addEventListener('click', event => {
   document.querySelector('.slider').classList.add('hide-flex-element');
   document.querySelector('.slider').classList.remove('show-flex-element');
+  document.querySelector('canvas').classList.add('show-flex-element');
+  document.querySelector('canvas').classList.remove('hide-flex-element');
   wrapper.innerHTML = "";
   wrapper.insertAdjacentHTML("beforeend", "<h1>Veronica Wajda</h1><p>An Engineer turned programmer. <br><br>Up and away from Calgary I ventured to Barcelona Spain in the last few months to attend Le Wagon's coding bootcamp.There I learned so much from the fundamentals of programming to creating an app from scratch within a week. Working in teams of four we prototyped and designed each element. The back end, completed in Ruby using authentication, geocoding, and so much more. Each web application was executed in Ruby on Rails with interactive components using JavaScript.<br><br>Today I continue to hone these skill as well as grow them. Currently learning React & Redux as well as node.js. Take a look around and browse my work. Let's meet over coffee if you have any interesting collaborations or work opportunities.</p>");
 });
@@ -16,7 +19,8 @@ projects.addEventListener('click', event => {
 
   document.querySelector('.slider').classList.remove('hide-flex-element');
   document.querySelector('.slider').classList.add('show-flex-element');
-
+  document.querySelector('canvas').classList.add('hide-flex-element');
+  document.querySelector('canvas').classList.remove('show-flex-element');
   wrapper.innerHTML = "";
 
   wrapper.insertAdjacentHTML("beforeend", " \
@@ -33,7 +37,8 @@ projects.addEventListener('click', event => {
 courses.addEventListener('click', event => {
   document.querySelector('.slider').classList.add('hide-flex-element');
   document.querySelector('.slider').classList.remove('show-flex-element');
-  const footer = document.querySelector('footer');
+  document.querySelector('canvas').classList.add('hide-flex-element');
+  document.querySelector('canvas').classList.remove('show-flex-element');
 
   wrapper.innerHTML = "";
   wrapper.insertAdjacentHTML("beforeend", " \
@@ -47,17 +52,19 @@ courses.addEventListener('click', event => {
     <p> \
     Engineering Design | Principles of Chemistry | Engineering Mechanics | Fundamentals of Engineering Computation | Calculus I | Technical Report Writing | Calculus II | Introduction to Linear Algebra | Introduction to Mechanical Engineering | Fundamentals of Physics II | Introduction to Product Development for Engineers and Computer Scientists | Calculus III for Engineers | Ordinary Differential Equations and Numerical Methods | Mechanics II | Thermodynamics I | Engineering Materials I | Mechanics of Materials | Electric Circuits and Machines for Mechanical Engineering | Probability and Statistics for Engineers | Introduction to Design | Thermodynamics II | Engineering Materials II | Electronics for Mechanical Engineers | Mathematics for Engineers | Advanced Strength of Materials | System Dynamics | Fluid Mechanics I | Engineering Law | Heat Transfer | Dynamics of Machinery | Machine Design | Control Systems | Fluid Mechanics II | Computer-Aided Design | Manufacturing | Technology, Society and Environment since 1800 | Mechanical Vibration Analysis | Mechanical Engineering Laboratory \
     </p>");
+  addFooter();
 });
-
 
 contact.addEventListener('click', event => {
   document.querySelector('.slider').classList.add('hide-flex-element');
   document.querySelector('.slider').classList.remove('show-flex-element');
+  document.querySelector('canvas').classList.add('show-flex-element');
+  document.querySelector('canvas').classList.remove('hide-flex-element');
 
   wrapper.innerHTML = "";
   wrapper.insertAdjacentHTML("beforeend", " \
     <h1>Hello</h1> \
-    <p>Shoot me an email at veronica.wajda@gmail.com if you have any interesting projects or would like to discuss any work opportunities.</p> \
+    <p>Shoot me an email at <a href='mailto:veronica.wajda@gmail.com'>veronica.wajda@gmail.com</a> if you have any interesting projects or would like to discuss any work opportunities.</p> \
     <p> \
     Find my work on \
     <a href='https://github.com/u2v22' target='_blank'><i class='fab fa-github'></i> Github</a> \

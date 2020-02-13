@@ -24,7 +24,7 @@ const prevSlide = () => {
   if(current.previousElementSibling) {
     current.previousElementSibling.classList.add('current');
   } else {
-    console.log(slides.lenght);
+    console.log(slides.length);
     slides[slides.length - 1].classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));

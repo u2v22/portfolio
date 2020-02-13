@@ -44,10 +44,6 @@ li {
   text-decoration: none;
 }
 
-.navbar > li {
-  font-size: 14px;
-}
-
 @media(max-width: 668px) { /*587*/
   p {
     font-size: 12px;
