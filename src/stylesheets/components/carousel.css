@@ -77,6 +77,12 @@ button {
   right: 35px;
 }
 
+@media(max-width: 768px) {
+  .slider {
+    width: 100%;
+  }
+}
+
 @media(max-width: 668px) { /*587*/
   #next {
     padding-right: 20px;
@@ -86,8 +92,3 @@ button {
   }
 }
 
-@media(max-width: 768px) {
-  .slider {
-    width: 100%;
-  }
-}

@@ -125,7 +125,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_5___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_
 var ___CSS_LOADER_URL_REPLACEMENT_6___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_6___);
 var ___CSS_LOADER_URL_REPLACEMENT_7___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_7___);
 // Module
-exports.push([module.i, ".show-flex-element {\n  display: flex;\n}\n\n.hide-flex-element {\n  display: none;\n}\n\n.slider {\n  position: relative;\n  overflow: hidden;\n  height: 600px;/*calc(100vh - 55px);*/\n  width: 45vw;\n  justify-content: space-between;\n  vertical-align: middle;\n}\n\n.slide {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  opacity: 0;\n  transition: opacity 0.7s ease-in-out;\n}\n\n.slide.current {\n  opacity: 1;\n}\n\n.slide:first-child() {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(2) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center top/contain;\n}\n\n.slide:nth-child(3) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(4) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(5) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(6) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(7) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(8) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") no-repeat center center/contain;\n}\n\nbutton {\n  position: relative;\n  height: 20px;\n  top: 300px; /*navbar & half image*/\n  background-color: transparent;\n  cursor: pointer;\n  outline: none;\n  border: none;\n  font-size: 22px;\n}\n\n#prev {\n  left: 35px;\n}\n\n#next {\n  right: 35px;\n}\n\n@media(max-width: 668px) { /*587*/\n  #next {\n    padding-right: 20px;\n  }\n  #prev {\n    padding-left: 20px;\n  }\n}\n\n@media(max-width: 768px) {\n  .slider {\n    width: 100%;\n  }\n}\n", ""]);
+exports.push([module.i, ".show-flex-element {\n  display: flex;\n}\n\n.hide-flex-element {\n  display: none;\n}\n\n.slider {\n  position: relative;\n  overflow: hidden;\n  height: 600px;/*calc(100vh - 55px);*/\n  width: 45vw;\n  justify-content: space-between;\n  vertical-align: middle;\n}\n\n.slide {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  opacity: 0;\n  transition: opacity 0.7s ease-in-out;\n}\n\n.slide.current {\n  opacity: 1;\n}\n\n.slide:first-child() {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(2) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center top/contain;\n}\n\n.slide:nth-child(3) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(4) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat center center/contain;\n}\n\n.slide:nth-child(5) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(6) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(7) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") no-repeat center center/contain;\n}\n.slide:nth-child(8) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") no-repeat center center/contain;\n}\n\nbutton {\n  position: relative;\n  height: 20px;\n  top: 300px; /*navbar & half image*/\n  background-color: transparent;\n  cursor: pointer;\n  outline: none;\n  border: none;\n  font-size: 22px;\n}\n\n#prev {\n  left: 35px;\n}\n\n#next {\n  right: 35px;\n}\n\n@media(max-width: 768px) {\n  .slider {\n    width: 100%;\n  }\n}\n\n@media(max-width: 668px) { /*587*/\n  #next {\n    padding-right: 20px;\n  }\n  #prev {\n    padding-left: 20px;\n  }\n}\n\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -202,7 +202,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".container {\n  width: 100vw;\n  display: flex;\n}\n\n.wrapper-left {\n  width: 55vw;\n}\n\n.wrapper-right {\n  display: flex;\n}\n\n.content {\n  padding: 0 60px;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 45vw;\n}\n\nimg {\n  display: block;\n  display: relative;\n  width: 300px;\n  margin: 0 auto;\n}\n\n#calgary {\n  position: absolute;\n  font-size: 12px;\n  left: 21.5%;\n  bottom: 35%;\n  color: rgb(235, 82, 71);\n  background-color: white;\n  padding: 3px 3px 2px 3px;\n  border-radius: 50%;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n@media(max-width: 768px) {\n  .container {\n    flex-direction: column;\n  }\n  canvas {\n    width: 100vw;\n  }\n}\n\n@media(max-width: 480px) {\n  .content {\n    padding: 0 20px;\n  }\n}\n", ""]);
+exports.push([module.i, ".container {\n  width: 100vw;\n  display: flex;\n}\n\n.wrapper-left {\n  width: 55vw;\n}\n\n.wrapper-right {\n  display: flex;\n}\n\n.content {\n  padding: 0 60px;\n}\n\ncanvas {\n  justify-content: flex-end;\n  width: 45vw;\n}\n\nimg {\n  display: block;\n  display: relative;\n  width: 300px;\n  margin: 0 auto;\n}\n\n#calgary {\n  position: absolute;\n  font-size: 12px;\n  left: 21.5%;\n  bottom: 35%;\n  color: rgb(235, 82, 71);\n  background-color: white;\n  padding: 3px 3px 2px 3px;\n  border-radius: 50%;\n}\n\n.navbar-layout {\n  display: flex;\n  justify-content: flex-end;\n}\n\n@media(max-width: 768px) {\n  .container {\n    flex-direction: column;\n  }\n  .wrapper-left {\n    width: 100%;\n  }\n  canvas {\n    width: 100vw;\n  }\n}\n\n@media(max-width: 480px) {\n  .content {\n    padding: 0 20px;\n  }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -855,18 +855,16 @@ addEventListener('mousemove', function (event) {
   mouse.y = event.clientY;
 });
 addEventListener('resize', function () {
-  if (canvas) {
-    console.log('has canvas');
-    canvas.width = canvas.clientWidth;
+  console.log(leftSide.clientWidth);
+  canvas.width = leftSide.clientWidth; // canvas.width = canvas.clientWidth;
 
-    if (innerWidth <= 768) {
-      canvas.height = innerHeight - navBar.clientHeight - leftSide.clientHeight;
-    } else {
-      canvas.height = innerHeight - navBar.clientHeight;
-    }
-
-    init();
+  if (innerWidth <= 768) {
+    canvas.height = innerHeight - navBar.clientHeight - leftSide.clientHeight;
+  } else {
+    canvas.height = innerHeight - navBar.clientHeight;
   }
+
+  init();
 }); // Utility functions
 
 function randomIntFromRange(min, max) {
@@ -1256,7 +1254,6 @@ contact.addEventListener('click', function (event) {
     <h1>Hello</h1> \
     <p>Shoot me an email at <a id='highlight' href='mailto:veronica.wajda@gmail.com'>veronica.wajda@gmail.com</a> if you have any interesting projects or would like to discuss any work opportunities.</p> \
     <img src='https://simplemaps.com/static/svg/ca/ca.svg'> \
-    <i id='calgary' class='fas fa-heart'></i> \
     <p> \
     Located in Calgary, Ab, Canada. <br><br> \
     Find my work on: \
@@ -1331,4 +1328,4 @@ module.exports = exported;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.c7f2abd58eafc75044bf.js.map
+//# sourceMappingURL=bundle.7f70736303c3b2e480a9.js.map

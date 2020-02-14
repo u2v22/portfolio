@@ -36,16 +36,15 @@ addEventListener('mousemove', (event) => {
 })
 
 addEventListener('resize', () => {
-  if(canvas){
-    console.log('has canvas');
-    canvas.width = canvas.clientWidth;
-    if(innerWidth <=768){
-      canvas.height = innerHeight - navBar.clientHeight - leftSide.clientHeight;
-    } else {
-      canvas.height = innerHeight - navBar.clientHeight;
-    }
-    init();
+  console.log(leftSide.clientWidth);
+  canvas.width = leftSide.clientWidth;
+  // canvas.width = canvas.clientWidth;
+  if(innerWidth <=768){
+    canvas.height = innerHeight - navBar.clientHeight - leftSide.clientHeight;
+  } else {
+    canvas.height = innerHeight - navBar.clientHeight;
   }
+  init();
 })
 
 // Utility functions

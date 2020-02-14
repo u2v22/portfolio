@@ -75,7 +75,6 @@ contact.addEventListener('click', event => {
     <h1>Hello</h1> \
     <p>Shoot me an email at <a id='highlight' href='mailto:veronica.wajda@gmail.com'>veronica.wajda@gmail.com</a> if you have any interesting projects or would like to discuss any work opportunities.</p> \
     <img src='https://simplemaps.com/static/svg/ca/ca.svg'> \
-    <i id='calgary' class='fas fa-heart'></i> \
     <p> \
     Located in Calgary, Ab, Canada. <br><br> \
     Find my work on: \
