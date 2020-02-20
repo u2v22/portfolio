@@ -161,7 +161,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nh1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\np {\n  font-size: 14px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n\ni {\n  font-size: 14px;\n}\n\nul {\n  padding: 0 20px;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n#highlight {\n  text-decoration: underline;\n  color: rgb(116,152,140);\n}\n\n@media(max-width: 668px) {\n  p {\n    font-size: 12px;\n  }\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nh1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n  font-weight: 400;\n}\n\np {\n  font-size: 14px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n\ni {\n  font-size: 14px;\n}\n\nul {\n  padding: 0 20px;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n#highlight {\n  text-decoration: underline;\n  color: rgb(116,152,140);\n}\n\n@media(max-width: 668px) {\n  p {\n    font-size: 12px;\n  }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -1356,4 +1356,4 @@ module.exports = exported;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.f4823146cea7e84e67c1.js.map
+//# sourceMappingURL=bundle.188852a0ec935de49297.js.map
