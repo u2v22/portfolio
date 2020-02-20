@@ -1,53 +1,57 @@
-const slides = document.querySelectorAll('.slide');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const auto = true;
-const intervalTime = 2000;
-let slideInterval;
+export function autoStart() {
 
-const nextSlide = () => {
-  const current = document.querySelector('.current');
+  const slides = document.querySelectorAll('.slide');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  const auto = true;
+  const intervalTime = 2000;
+  let slideInterval;
 
-  current.classList.remove('current');
+  if(slides){
+    console.log('has slides');
 
-  if(current.nextElementSibling && current.nextElementSibling.nodeName != "BUTTON") {
-    current.nextElementSibling.classList.add('current');
-  } else {
-    slides[0].classList.add('current');
+    const nextSlide = () => {
+      const current = document.querySelector('.current');
+      // current.classList.remove('current');
+
+      if(current.nextElementSibling && current.nextElementSibling.nodeName != "BUTTON") {
+        current.nextElementSibling.classList.add('current');
+      } else {
+        slides[0].classList.add('current');
+      }
+      setTimeout(() => current.classList.remove('current'));
+    }
+
+    const prevSlide = () => {
+      const current = document.querySelector('.current');
+      current.classList.remove('current');
+
+      if(current.previousElementSibling && current.previousElementSibling.nodeName != "BUTTON") {
+        current.previousElementSibling.classList.add('current');
+      } else {
+        slides[slides.length - 1].classList.add('current');
+      }
+      setTimeout(() => current.classList.remove('current'));
+    }
+
+    prev.addEventListener('click', event => {
+      prevSlide();
+      if(auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(prevSlide, intervalTime);
+      }
+    });
+
+    next.addEventListener('click', event => {
+      nextSlide();
+      if(auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+      }
+    });
+
+    if(auto) {
+      slideInterval = setInterval(nextSlide, intervalTime);
+    }
   }
-  setTimeout(() => current.classList.remove('current'));
-}
-
-const prevSlide = () => {
-  const current = document.querySelector('.current');
-  current.classList.remove('current');
-
-  if(current.previousElementSibling && current.previousElementSibling.nodeName != "BUTTON") {
-    current.previousElementSibling.classList.add('current');
-  } else {
-    slides[slides.length - 1].classList.add('current');
-  }
-  setTimeout(() => current.classList.remove('current'));
-}
-
-prev.addEventListener('click', event => {
-  prevSlide();
-  if(auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(prevSlide, intervalTime);
-  }
-  console.log('running previous button');
-})
-
-next.addEventListener('click', event => {
-  nextSlide();
-  if(auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-  console.log('running next button');
-})
-
-if(auto) {
-  slideInterval = setInterval(nextSlide, intervalTime);
 }

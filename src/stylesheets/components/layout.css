@@ -1,5 +1,6 @@
 .container {
   width: 100vw;
+  height: 100%;
   display: flex;
 }
 
@@ -20,24 +21,6 @@ canvas {
   width: 45vw;
 }
 
-img {
-  display: block;
-  display: relative;
-  width: 300px;
-  margin: 0 auto;
-}
-
-#calgary {
-  position: absolute;
-  font-size: 12px;
-  left: 21.5%;
-  bottom: 35%;
-  color: rgb(235, 82, 71);
-  background-color: white;
-  padding: 3px 3px 2px 3px;
-  border-radius: 50%;
-}
-
 .navbar-layout {
   display: flex;
   justify-content: flex-end;
@@ -48,6 +31,9 @@ img {
     flex-direction: column;
   }
   .wrapper-left {
+    width: 100%;
+  }
+  .wrapper-right {
     width: 100%;
   }
   canvas {

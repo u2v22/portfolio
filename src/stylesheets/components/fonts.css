@@ -49,7 +49,7 @@ li {
   color: rgb(116,152,140);
 }
 
-@media(max-width: 668px) { /*587*/
+@media(max-width: 668px) {
   p {
     font-size: 12px;
   }

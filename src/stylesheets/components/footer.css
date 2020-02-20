@@ -1,4 +1,4 @@
-footer {
+/*footer {
   justify-content: center;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -16,3 +16,4 @@ footer > div > a {
 @media(max-width: 768px) {
   flex-direction: column;
 }
+*/

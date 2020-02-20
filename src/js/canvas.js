@@ -1,51 +1,48 @@
 import utils from './utils';
 
 const navBar = document.querySelector('.navbar-layout');
-const leftSide = document.querySelector('.wrapper-left');
+const leftSideWrapper = document.querySelector('.wrapper-left');
+const rightSideWrapper = document.querySelector('.wrapper-right');
+const home = document.getElementById('home');
+const contact = document.getElementById('contact');
 
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
 
+const gravity = 1;
+const friction = 0.8;
+
 canvas.width = canvas.clientWidth;
-console.log(leftSide.clientHeight);
 
 if(innerWidth <=768){
-  canvas.height = innerHeight - navBar.clientHeight - leftSide.clientHeight;
+  canvas.height = innerHeight - navBar.clientHeight - leftSideWrapper.offsetHeight;
+  console.log(canvas.height);
 } else {
   canvas.height = innerHeight - navBar.clientHeight;
 }
 
-const gravity = 1;
-const friction = 0.6;
-
-const mouse = {
-  x: innerWidth / 2,
-  y: innerHeight / 2
-}
-
-const colors = [
-  'rgb(235, 82, 71)',
-  'rgb(114, 201, 194)',
-  'rgb(134, 167, 158)',
-  'rgb(183, 85, 74)']
-
 // Event Listeners
-addEventListener('mousemove', (event) => {
-  mouse.x = event.clientX
-  mouse.y = event.clientY
-})
-
 addEventListener('resize', () => {
-  console.log(leftSide.clientWidth);
-  canvas.width = leftSide.clientWidth;
-  // canvas.width = canvas.clientWidth;
-  if(innerWidth <=768){
-    canvas.height = innerHeight - navBar.clientHeight - leftSide.clientHeight;
+  canvas.width = leftSideWrapper.clientWidth;
+  if(innerWidth <= 768){
+    canvas.height = innerHeight - navBar.clientHeight - leftSideWrapper.clientHeight;
   } else {
     canvas.height = innerHeight - navBar.clientHeight;
   }
+  console.log(`canvas height: ${canvas.height}`);
   init();
-})
+});
+
+
+// addEventListener('click', () => {
+//   canvas.width = leftSideWrapper.clientWidth;
+//   if(innerWidth <= 768){
+//     canvas.height = innerHeight - navBar.clientHeight - leftSideWrapper.clientHeight;
+//   } else {
+//     canvas.height = innerHeight - navBar.clientHeight;
+//   }
+//   init()
+// });
 
 // Utility functions
 function randomIntFromRange(min, max) {
@@ -74,12 +71,12 @@ function distance(x1, y1, x2, y2) {
  */
 
 function rotate(velocity, angle) {
-    const rotatedVelocities = {
-        x: velocity.x * Math.cos(angle) - velocity.y * Math.sin(angle),
-        y: velocity.x * Math.sin(angle) + velocity.y * Math.cos(angle)
-    };
+  const rotatedVelocities = {
+      x: velocity.x * Math.cos(angle) - velocity.y * Math.sin(angle),
+      y: velocity.x * Math.sin(angle) + velocity.y * Math.cos(angle)
+  };
 
-    return rotatedVelocities;
+  return rotatedVelocities;
 }
 
 /**
@@ -130,7 +127,8 @@ function resolveCollision(particle, otherParticle) {
 }
 
 // Objects
-function Particle(x, y, radius, color) {
+let particles;
+export function Particle(x, y, radius, color) {
     this.x = x
     this.y = y
     // this.dy = dy
@@ -155,6 +153,7 @@ function Particle(x, y, radius, color) {
       if((this.x - this.radius <= 0) || (this.x + this.radius >= canvas.width)) {
         this.velocity.x = -this.velocity.x;
       }
+      // Ensuring the balls don't excape from the top and bottom
       if(this.y - this.radius <= 0) {
         this.velocity.y = -(this.velocity.y - 5); //-this.dy;
       } else if(this.y + this.radius >= canvas.height) {
@@ -170,28 +169,60 @@ function Particle(x, y, radius, color) {
     c.beginPath()
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
     c.font = "20px Georgia";
-    c.fillStyle = this.color // was strokeStyle
-    // c.fillStyle = pattern(<img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png">, 0);
-    c.fill() // was c.stroke()
-    // <img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png">
+    c.fillStyle = this.color;
+    c.fill()
     c.closePath()
   };
 }
 
 // Implementation
-let particles
 function init() {
+
   particles = []
 
-  for (let i = 0; i < 12; i++) {
-    let radius;
-    if(innerWidth <= 578){
-      radius = randomIntFromRange(15, 40);
+  const colors = [
+  'rgb(235, 82, 71)',
+  'rgb(114, 201, 194)',
+  'rgb(134, 167, 158)',
+  'rgb(183, 85, 74)']
+
+  const ballsSmallScreen  = 6;
+  const ballsMediumScreen = 8;
+  const ballsLargeScreen  = 12;
+
+  let radius;
+  let ballsQuantity = ballsSmallScreen
+
+
+  if(canvas.height <= 300){
+    ballsQuantity = ballsSmallScreen;
+    console.log('small balls');
+  } else if (innerWidth <= 578) {
+    ballsQuantity = ballsMediumScreen;
+    console.log('med balls');
+
+  } else if (innerWidth <= 768 && innerWidth > 578) {
+    ballsQuantity = ballsLargeScreen;
+    console.log('lg balls');
+
+  } else {
+    ballsQuantity = ballsLargeScreen;
+    console.log('lg balls else');
+
+  }
+
+  for (let i = 0; i < ballsQuantity; i++) {
+
+    if(innerWidth <= 578 && innerHeight <= 300){
+      radius = randomIntFromRange(12, 24);
+    } else if (innerWidth <= 578) {
+      radius = randomIntFromRange(20, 40);
     } else if (innerWidth <= 768 && innerWidth > 578) {
       radius = randomIntFromRange(20, 50);
     } else {
-      radius = randomIntFromRange(20,60);
+      radius = randomIntFromRange(20, 60);
     }
+
     const color = randomColor(colors);
     let x = randomIntFromRange(radius, canvas.width - radius);
     let y = randomIntFromRange(radius, canvas.height - radius);
@@ -205,7 +236,6 @@ function init() {
         }
       }
     }
-
     particles.push(new Particle(x, y, radius, color));
   }
 }
@@ -217,13 +247,8 @@ function animate() {
 
   particles.forEach(particle => {
    particle.update(particles)
-  })
+  });
 }
 
 init()
 animate()
-
-document.getElementById('home').onClick = () => {
-  init()
-  animate()
-}
