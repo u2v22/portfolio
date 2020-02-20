@@ -1,3 +1,5 @@
+import { highlight } from './colours';
+
 export function insertProjects() {
 
   const leftSideWrapper = document.querySelector('.content');
@@ -11,4 +13,5 @@ export function insertProjects() {
     <h3><a href='http://airpet-u2v22@herokuapp.com' target='_blank'> Airpet </a></h3> \
     <p>A fun little Airbnb inspired replicate. Shelters can list available pets so people can have furry companions on a short term basis. Great for listing your pets while you're on vacation too!</p> \
     ");
+  highlight()
 }

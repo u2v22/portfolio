@@ -161,7 +161,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nh1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n  font-weight: 400;\n}\n\np {\n  font-size: 14px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n\ni {\n  font-size: 14px;\n}\n\nul {\n  padding: 0 20px;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n#highlight {\n  text-decoration: underline;\n  color: rgb(116,152,140);\n}\n\n@media(max-width: 668px) {\n  p {\n    font-size: 12px;\n  }\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: 'Heebo';\n  font-weight: 300;\n}\n\nh1 {\n  font-weight: 300;\n}\n\nh2 {\n  font-weight: 300;\n}\n\nh3 {\n  font-weight: 300;\n}\n\nh3:hover {\n  cursor: pointer;\n}\n\np {\n  font-size: 14px;\n  font-weight: 300;\n  text-align: justify;\n}\n\na {\n  text-decoration: none;\n  color: black;\n}\n\ni {\n  font-size: 14px;\n}\n\nul {\n  padding: 0 20px;\n}\n\nli {\n  list-style: none;\n  text-decoration: none;\n}\n\n#highlight {\n  text-decoration: underline;\n  color: rgb(116,152,140);\n}\n\n@media(max-width: 668px) {\n  p {\n    font-size: 12px;\n  }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -1045,7 +1045,7 @@ function autoStart() {
   var prev = document.getElementById('prev');
   var next = document.getElementById('next');
   var auto = true;
-  var intervalTime = 2000;
+  var intervalTime = 3000;
   var slideInterval;
 
   if (slides) {
@@ -1101,6 +1101,32 @@ function autoStart() {
       slideInterval = setInterval(nextSlide, intervalTime);
     }
   }
+}
+
+/***/ }),
+
+/***/ "./src/js/colours.js":
+/*!***************************!*\
+  !*** ./src/js/colours.js ***!
+  \***************************/
+/*! exports provided: highlight */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "highlight", function() { return highlight; });
+function highlight() {
+  var links = document.querySelectorAll('a');
+  console.log(links);
+  var hoverColors = ['rgb(235, 82, 71)', 'rgb(114, 201, 194)', 'rgb(134, 167, 158)', 'rgb(183, 85, 74)'];
+  links.forEach(function (item) {
+    item.addEventListener('mouseover', function () {
+      item.style.color = hoverColors[Math.floor(Math.random() * hoverColors.length)];
+    });
+    item.addEventListener('mouseleave', function () {
+      item.style.color = '#000000';
+    });
+  });
 }
 
 /***/ }),
@@ -1216,6 +1242,8 @@ __webpack_require__(/*! ./canvas */ "./src/js/canvas.js"); // import { init, ani
 
  // STYLE SHEETS and HTML
 
+__webpack_require__(/*! ./navbar */ "./src/js/navbar.js");
+
 
  // VARIABLES
 
@@ -1260,12 +1288,28 @@ contact.addEventListener('click', function (event) {
   Object(_contact__WEBPACK_IMPORTED_MODULE_3__["insertContact"])();
   canvas.style.display = 'flex';
   slider.style.display = 'none';
-  cert.style.display = 'none'; // canvas.width = leftSideWrapper.clientWidth;
-  // if(innerWidth <= 768){
-  //   canvas.height = innerHeight - navBar.clientHeight - leftSideWrapper.clientHeight;
-  // } else {
-  //   canvas.height = innerHeight - navBar.clientHeight;
-  // }
+  cert.style.display = 'none';
+});
+
+/***/ }),
+
+/***/ "./src/js/navbar.js":
+/*!**************************!*\
+  !*** ./src/js/navbar.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var navItems = document.querySelectorAll('.navbar-layout li');
+console.log(navItems);
+var hoverColors = ['rgb(235, 82, 71)', 'rgb(114, 201, 194)', 'rgb(134, 167, 158)', 'rgb(183, 85, 74)'];
+navItems.forEach(function (item) {
+  item.addEventListener('mouseover', function () {
+    item.style.color = hoverColors[Math.floor(Math.random() * hoverColors.length)];
+  });
+  item.addEventListener('mouseleave', function () {
+    item.style.color = '#000000';
+  });
 });
 
 /***/ }),
@@ -1280,6 +1324,8 @@ contact.addEventListener('click', function (event) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "insertProjects", function() { return insertProjects; });
+/* harmony import */ var _colours__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./colours */ "./src/js/colours.js");
+
 function insertProjects() {
   var leftSideWrapper = document.querySelector('.content');
   leftSideWrapper.innerHTML = "";
@@ -1291,6 +1337,7 @@ function insertProjects() {
     <h3><a href='http://airpet-u2v22@herokuapp.com' target='_blank'> Airpet </a></h3> \
     <p>A fun little Airbnb inspired replicate. Shelters can list available pets so people can have furry companions on a short term basis. Great for listing your pets while you're on vacation too!</p> \
     ");
+  Object(_colours__WEBPACK_IMPORTED_MODULE_0__["highlight"])();
 }
 
 /***/ }),
@@ -1356,4 +1403,4 @@ module.exports = exported;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.188852a0ec935de49297.js.map
+//# sourceMappingURL=bundle.7dd292a8e977b855a625.js.map

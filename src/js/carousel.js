@@ -4,7 +4,7 @@ export function autoStart() {
   const prev = document.getElementById('prev');
   const next = document.getElementById('next');
   const auto = true;
-  const intervalTime = 2000;
+  const intervalTime = 3000;
   let slideInterval;
 
   if(slides){

@@ -13,6 +13,7 @@ import { nextSlide, prevSlide } from './carousel';
 import utils from './utils';
 
 // STYLE SHEETS and HTML
+require('./navbar');
 import "../stylesheets/style.css";
 import html from '../../index.html';
 
@@ -65,12 +66,4 @@ contact.addEventListener('click', event => {
   canvas.style.display = 'flex';
   slider.style.display = 'none';
   cert.style.display   = 'none';
-
-  // canvas.width = leftSideWrapper.clientWidth;
-  // if(innerWidth <= 768){
-  //   canvas.height = innerHeight - navBar.clientHeight - leftSideWrapper.clientHeight;
-  // } else {
-  //   canvas.height = innerHeight - navBar.clientHeight;
-  // }
-
 });
