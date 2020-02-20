@@ -39,9 +39,14 @@ ul {
   padding: 0 20px;
 }
 
+
 li {
   list-style: none;
   text-decoration: none;
+}
+
+.bullets > li {
+  list-style-type: disc;
 }
 
 #highlight {

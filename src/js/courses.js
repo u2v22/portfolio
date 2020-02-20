@@ -5,15 +5,43 @@ export function insertCourses() {
   leftSideWrapper.innerHTML = "";
   leftSideWrapper.insertAdjacentHTML("beforeend", "\
     <h1>Courses</h1> \
-    <h3>React and Redux - current WIP </h3> \
-    <p>App: Constructor, Render, Props, States | Action creator as callback | React and Redux logger Redux promises | Routing and form Testing with Jest \
+    <h3><a href='https://www.lewagon.com/' target='_blank'>Le Wagon: Full Stack Developer</a></h3> ");
+
+  leftSideWrapper.insertAdjacentHTML("beforeend", " \
+    <div class='icons-coding'> \
+      <img src='../images/vector-rails-12-transparent.png' height='50px'> \
+      <img src='../images/Ruby_logo.svg' height='50px'> \
+      <img src='../images/heroku-logotype-horizontal-purple.png' height='50px'> \
+      <img src='../images/webpack-svg-2-transparent.png' height='50px'> \
+      <img src='../images/svg-js-4-transparent.png' height='50px'> \
+      <img src='../images/es6.png' height='50px'> \
+      <img src='../images/CSS3_logo_and_wordmark.svg' height='50px'> \
+      <img src='../images/HTML5_Logo.svg' height='50px'> \
+      <img src='../images/PostgreSQL_logo.3colors.120x120.png' height='50px'> \
+      <img src='../images/cloudinary_logo_for_white_bg.svg' height='50px'> \
+      <img src='../images/babel.png' height='50px'> \
+      <img src='../images/jsonapi.png' height='50px'> \
+      <img src='../images/Octocat.png' height='50px'> \
+      <img src='../images/Bootstrap_logo.svg' height='50px'> \
+      <img src='../images/mapbox-logo-black.svg' height='40px'> \
+    </div> \
+      <ul class='bullets'> \
+        <li> Core concepts of Object-Oriented programming </li> \
+        <li> DOM Events & AJAX </li>\
+        <li> Testing in Rails with Rspec </li>\
+        <li> Authentication with Devise </li> \
+        <li> Omniauth and 3rd services' login </li> \
+        <li> Users' authorization with Pundit </li> \
+        <li> Background Jobs with Sidekiq </li> \
+      </ul>\
     </p> \
-    <h3>Full Stack Dev</h3> \
+    <h3><a href='https://engineering.uottawa.ca/undergraduate-programs/courses/mechanical-2019' target='_blank'>University of Ottawa: B.A.Sc. Mechanical Engineering</a></h3> \
+    <div class='icons-coding'> \
+      <img src='../images/C++_Logo.svg' height='50px'> \
+    </div> \
     <p> \
-    Web 101: how the web works | Terminal basic commands | Git basic commands | HTML / CSS foundations | Javascript foundations | Core concepts of programming | Ruby doc for built-in classes | Algorithms & data structures (Array, Hash) | Text pattern detection with Regular Expressions | Parse and store data from standardized files (JSON, CSV, XML) | Web scraping with Nokogiri | Request and parse data from RESTful JSON APIs | Core concepts of Object-Oriented programming | Classes, objects and instance variables | Instance and class methods, Inheritance | Public vs. Private Interfaces | Routing users' requests | Simulating a database with CSV files | In-depth understanding of MVC (Model View Controller) | Database Schema Design & SQL | One-to-many, many-to-many relations and join table | CRUD in SQL (Create, Read, Update, Delete) | Advanced JOIN queries | Connecting your DB to ruby with an ORM (Object Relational Mapping) | Active Record Basics: migrations & naming convention | Active Record Advanced: associations & validation | Product Design, UX & UI principles | HTML basics | CSS (selectors, properties, stylesheets' organization) | Atomic design principles | CSS techniques with flexbox & CSS grid | Bootstrap basics & Responsive Grid System | JavaScript fundamentals | ES6 and differences to ES5 | JavaScript Tooling (Babel, Webpack, yarn) | DOM Events & AJAX | MVC in Rails: Routing, Controllers, Params & Views | Models & CRUD in Rails | Adding gems to your project | ERB: Layouts, Partials and Helpers | Nested Resources and Namespaces | Refactoring an app with Services | Defining a Rails API | Collaborating on a Rails app with Git and Github | Testing in Rails with Rspec | Authentication with Devise | Omniauth and 3rd services' login | Users' authorization | Search in Rails | Payment, Mailing, Geocoding and Maps | Background Jobs with Sidekiq | Image upload with Cloudinary & Continuous Deployment with Heroku \
-    </p> \
-    <h3>B.A.Sc. Mechanical Engineering</h3> \
-    <p> \
-    Engineering Design | Principles of Chemistry | Engineering Mechanics | Fundamentals of Engineering Computation | Calculus I | Technical Report Writing | Calculus II | Introduction to Linear Algebra | Introduction to Mechanical Engineering | Fundamentals of Physics II | Introduction to Product Development for Engineers and Computer Scientists | Calculus III for Engineers | Ordinary Differential Equations and Numerical Methods | Mechanics II | Thermodynamics I | Engineering Materials I | Mechanics of Materials | Electric Circuits and Machines for Mechanical Engineering | Probability and Statistics for Engineers | Introduction to Design | Thermodynamics II | Engineering Materials II | Electronics for Mechanical Engineers | Mathematics for Engineers | Advanced Strength of Materials | System Dynamics | Fluid Mechanics I | Engineering Law | Heat Transfer | Dynamics of Machinery | Machine Design | Control Systems | Fluid Mechanics II | Computer-Aided Design | Manufacturing | Technology, Society and Environment since 1800 | Mechanical Vibration Analysis | Mechanical Engineering Laboratory \
+      <ul class='bullets'> \
+        <li> Fortran </li>\
+      </ul>\
     </p>");
 }
