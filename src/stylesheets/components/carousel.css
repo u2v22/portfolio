@@ -26,7 +26,7 @@
 }
 
 .slide:nth-child(2) {
-  background: url('../../images/cnd-ice-main-iPhone.png') no-repeat center top/contain;
+  background: url('../../images/cnd-ice-main-iPhone.png') no-repeat center center/contain;
 }
 
 .slide:nth-child(3) {
@@ -38,15 +38,22 @@
 }
 
 .slide:nth-child(5) {
+  background: url('../../images/ravenous-macbook.png') no-repeat center center/contain;
+}
+
+.slide:nth-child(6) {
   background: url('../../images/uproot.herokuapp.com-iPad.png') no-repeat center center/contain;
 }
-.slide:nth-child(6) {
+
+.slide:nth-child(7) {
   background: url('../../images/uproot.herokuapp.com_question_1.png') no-repeat center center/contain;
 }
-.slide:nth-child(7) {
+
+.slide:nth-child(8) {
   background: url('../../images/airpet-u2v22-Macbook.png') no-repeat center center/contain;
 }
-.slide:nth-child(8) {
+
+.slide:nth-child(9) {
   background: url('../../images/airpet-u2v22.herokuapp.com1-Macbook.png') no-repeat center center/contain;
 }
 
